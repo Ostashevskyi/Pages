@@ -6,57 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pages</title>
     <link rel="stylesheet" href="./src/styles/scss/styles.css">
+    <script>
+        function toogleBurger() {
+            document.querySelector('.header__wrapper').classList.toggle('open');
+        }
+    </script>
 </head>
 <body>
     <div class="wrapper">
-        <header>
-            <div class="header__left-side">
-                <div class="header__logo">
-                    <div class="logo__image">
-                        <img src="./src/images/icons/logo.svg" alt="logo">
+        <header class="header__wrapper">
+            <button class="header__burger-btn" onclick="toogleBurger()">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="header__sides">
+                <div class="header__left-side">
+                    <div class="header__logo">
+                        <div class="logo__image">
+                            <img src="./src/images/icons/logo.svg" alt="logo">
+                        </div>
+                        <div class="logo__title">
+                            <p>
+                                <a href="index.html">Pages</a>
+                            </p>
+                        </div>
                     </div>
-                    <div class="logo__title">
-                        <p>
-                            <a href="index.html">Pages</a>
-                        </p>
+                    <div class="header__socialmedia">
+                        <div class="header__icons">
+                            <a href="#">
+                                <img src="./src/images/icons/fb-blue.svg" alt="facebook-icon">
+                            </a>
+                        </div>
+                        <div class="header__icons">
+                            <a href="#">
+                                <img src="./src/images/icons/twitter-blue.svg" alt="twitter-icon">
+                            </a>
+                        </div>
+                        <div class="header__icons">
+                            <a href="#">
+                                <img src="./src/images/icons/ln-blue.svg" alt="linkedin-icon">
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="header__socialmedia">
-                    <div class="header__icons">
-                        <a href="#">
-                            <img src="./src/images/icons/fb-blue.svg" alt="facebook-icon">
-                        </a>
-                    </div>
-                    <div class="header__icons">
-                        <a href="#">
-                            <img src="./src/images/icons/twitter-blue.svg" alt="twitter-icon">
-                        </a>
-                    </div>
-                    <div class="header__icons">
-                        <a href="#">
-                            <img src="./src/images/icons/ln-blue.svg" alt="linkedin-icon">
-                        </a>
-                    </div>
+                <div class="header__right-side">
+                    <nav>
+                        <div class="header__list">
+                            <ul class="menu_box">
+                                <li class="menu_item"><a href="#">Home</a></li>
+                                <li class="menu_item"><a href="#">Pages</a></li>
+                                <li class="menu_item"><a href="#">About</a></li>
+                                <li class="menu_item"><a href="#">Services</a></li>
+                                <li class="menu_item"><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__shopcart">
+                            <img src="./src/images/icons/shop-cart.svg" alt="">
+                        </div>
+                        <div class="header__btn">
+                            <button>Order Today</button>
+                        </div>
+                    </nav>
                 </div>
-            </div>
-            <div class="header__right-side">
-                <nav>
-                    <div class="header__list">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Pages</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="header__shopcart">
-                        <img src="./src/images/icons/shop-cart.svg" alt="">
-                    </div>
-                    <div class="header__btn">
-                        <button>Order Today</button>
-                    </div>
-                </nav>
             </div>
         </header>
 
