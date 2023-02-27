@@ -1,0 +1,19 @@
+@use '../utilities/colors';
+@use '../utilities/flex';
+
+@mixin btn($type: 'primary') {
+        @include flex.flex;
+        .header__icons {
+            @include flex.flex(center, center);
+            min-width: 45px;
+            min-height: 45px;
+            margin-right: 10px;
+            background: transparent;
+            border: 1px solid colors.$YELLOW;
+            
+            @if ($type == 'primary') {
+                background: colors.$WHITE;
+                border: none;
+            }
+        }
+    }

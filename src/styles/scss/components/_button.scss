@@ -1,0 +1,30 @@
+@use '../utilities/colors';
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+
+@mixin btn($type: 'secondary', $width: '220px', $height: '65px') {
+    width: $width;
+    height: $height;
+    border: 1px solid colors.$YELLOW;
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 125%;
+    letter-spacing: 2%;
+    color: colors.$BLUE;
+    background-color: colors.$BLUE;
+    cursor: pointer;
+    @if $type == 'primary' {
+        background-color: colors.$YELLOW;
+        border: none;
+    }
+}
+
+// @mixin btn-big($type: 'secondary') {
+//     @include btn-small();
+//     @if $type == 'primary' {
+//         @include btn-small('primary');
+//     }
+//     width: 300px;
+//     height: 65px;
+// }
+

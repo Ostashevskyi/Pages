@@ -1,0 +1,23 @@
+@use './colors';
+@use './text';
+
+@mixin ul-list() {
+    ul {
+        li {
+            @include text.paragraph($lh: 155%, $color: colors.$BLUE);
+            &::marker {
+                color: colors.$YELLOW;
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+@mixin ol-list() {
+    ol {
+        li {
+            @include text.paragraph($lh: 155%, $color: colors.$BLUE);
+        }
+    }
+}
