@@ -7,18 +7,16 @@
     align-items: center;
     justify-content: space-around;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1023px) {
         justify-content: space-between;
-        .header__burger-btn {
-            margin: -10px 0px 0px 20px;
-        }
             &.open {
                 .header__sides {
                     transform: translateX(0%);
+                    @media (max-width: 1023px) {
+                        display: flex;
+                    }
                 }
                 .header__burger-btn {
-                    margin: -10px 0px 0px 20px;
-                    position: fixed;
                     span {
                         &:nth-child(1) {
                             transform: translateY(0) rotate(45deg);
@@ -46,7 +44,7 @@
         display: none;
         z-index: 2;
         background-color: transparent;
-        margin-left: 20px;
+        margin-left: 10px;
         span {
             position: absolute;
             width: 30px;
@@ -62,14 +60,14 @@
             }
         }
         
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1023px) {
             display: block;
         }
     }
 
     .header__sides {
         justify-content: flex-start;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1023px) {
             margin-right: 20px;
         }
         span {
@@ -94,7 +92,7 @@
             }
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1023px) {
             display: flex;
             flex-direction: column;
             position: fixed;
@@ -130,7 +128,7 @@
 
         
 
-        @media (min-width: 320px) and (max-width: 767px) {
+        @media (min-width: 320px) and (max-width: 1023px) {
             width: 100%;
             display: block;
             text-align: center;
