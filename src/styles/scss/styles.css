@@ -82,26 +82,30 @@
 }
 .form .form__block-text .block__chechbox p {
   font-family: "Inter", sans-serif;
-  font-weight: "normal";
+  font-weight: normal;
   font-size: "15px";
   line-height: 170%;
   color: #FFFFFF;
 }
 .form .form__block-text .block__btn input {
-  width: "220px";
-  height: "65px";
+  width: 220px;
+  height: 65px;
   border: 1px solid #FFCA42;
   font-family: "Cardo", serif;
   font-weight: 700;
   font-size: 19px;
   line-height: 125%;
-  letter-spacing: 2%;
   color: #1B3764;
-  background-color: #1B3764;
+  background-color: transparent;
   cursor: pointer;
   background-color: #FFCA42;
   border: none;
   width: 100%;
+}
+
+.content {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 header {
@@ -195,8 +199,8 @@ header .header__sides .header__right-side nav .header__list ul {
 header .header__sides .header__right-side nav .header__list ul li {
   margin-right: 20px;
   font-family: "Inter", sans-serif;
-  font-weight: "normal";
-  font-size: "19px";
+  font-weight: normal;
+  font-size: 19px;
   line-height: 170%;
   color: #FFFFFF;
 }
@@ -229,9 +233,8 @@ header .header__sides .header__right-side nav .header__btn button {
   font-weight: 700;
   font-size: 19px;
   line-height: 125%;
-  letter-spacing: 2%;
   color: #1B3764;
-  background-color: #1B3764;
+  background-color: transparent;
   cursor: pointer;
   background-color: #FFCA42;
   border: none;
@@ -379,6 +382,9 @@ header .header__sides .header__right-side nav .header__btn button {
   }
 }
 
+main {
+  margin-top: 30px;
+}
 main .main__welcome_part {
   margin-bottom: 115px;
   display: flex;
@@ -412,24 +418,22 @@ main .main__welcome_part .welcome_part__info .welcome__info_text .welcome__line_
   font-family: "Cardo", "serif";
   font-weight: 400;
   font-size: 24px;
-  line-height: "130px";
-  letter-spacing: -1.5%;
+  line-height: 50px;
   color: #FFFFFF;
   font-style: italic;
 }
 main .main__welcome_part .welcome_part__info .welcome__info_text h1 {
   font-family: "Cardo", "serif";
-  font-weight: "normal";
+  font-weight: normal;
   font-size: 64px;
   line-height: 110%;
-  letter-spacing: -1.5%;
   color: #FFFFFF;
   margin-bottom: 30px;
 }
 main .main__welcome_part .welcome_part__info .welcome__info_text p {
   font-family: "Inter", sans-serif;
-  font-weight: "normal";
-  font-size: "19px";
+  font-weight: normal;
+  font-size: 19px;
   line-height: 170%;
   color: #B4C7E7;
   margin-bottom: 50px;
@@ -445,9 +449,8 @@ main .main__welcome_part .welcome_part__info .welcome__info_order button {
   font-weight: 700;
   font-size: 19px;
   line-height: 125%;
-  letter-spacing: 2%;
   color: #1B3764;
-  background-color: #1B3764;
+  background-color: transparent;
   cursor: pointer;
   background-color: #FFCA42;
   border: none;
@@ -458,7 +461,6 @@ main .main__welcome_part .welcome_part__info .welcome__info_order a span {
   font-weight: 700;
   font-size: 19px;
   line-height: 125%;
-  letter-spacing: -1.5%;
   color: #FFFFFF;
   border-bottom: 1px solid white;
 }
@@ -476,8 +478,8 @@ main .main__welcome_part .welcome_part__info .welcome__info_order a span {
 }
 main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   font-family: "Inter", sans-serif;
-  font-weight: "normal";
-  font-size: "19px";
+  font-weight: 700;
+  font-size: 19px;
   line-height: 155%;
   color: #FFFFFF;
   list-style-type: disc;
@@ -485,6 +487,10 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 main .main__welcome_part .welcome_part__info .welcome__info_list ul li::marker {
   color: #FFCA42;
   font-size: 20px;
+}
+main .main__welcome_part .welcome_part__info .welcome__info_list ul li span {
+  font-weight: 300;
+  color: #B4C7E7;
 }
 main .main__welcome_part .welcome_part__info .welcome__info_list ul {
   margin-left: 20px;
@@ -539,6 +545,108 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   }
 }
 
+.main__book_includes {
+  background-color: #FFFFFF;
+}
+.main__book_includes .book__includes_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main__book_includes .book__includes_content h3 {
+  margin: 145px 0px 20px 0px;
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 50px;
+  color: #1B3764;
+}
+.main__book_includes .book__includes_content .line {
+  width: 55px;
+  border: 1px solid #FFCA42;
+  margin-bottom: 55px;
+}
+.main__book_includes .book__includes_content .book_includes__books {
+  margin-bottom: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .main__book_includes .book__includes_content .book_includes__books {
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book {
+  margin: 0px 50px 50px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__img img {
+  width: 300px;
+  height: 400px;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info {
+  margin-left: 40px;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info h4 {
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 50px;
+  color: #1B3764;
+  margin-bottom: 15px;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info p {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 150%;
+  color: #969AA0;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info ul li {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 155%;
+  color: #1B3764;
+  list-style-type: disc;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info ul li::marker {
+  color: #FFCA42;
+  font-size: 20px;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info ul li span {
+  font-weight: 300;
+  color: #969AA0;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info ul li:first-child {
+  margin-left: 20px;
+}
+.main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info button {
+  width: 220px;
+  height: 65px;
+  border: 1px solid #FFCA42;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 125%;
+  color: #1B3764;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -556,8 +664,12 @@ a {
 
 body {
   background: #1B3764;
-  max-width: 1300px;
-  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    position: absolute;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,700;1,400&display=swap');
 
-@mixin paragraph($fw: 'normal', $fs: '19px', $lh: 170%, $color: colors.$WHITE) {
+@mixin paragraph($fw: normal, $fs: 19px, $lh: 170%, $color: colors.$WHITE) {
     font-family: 'Inter', sans-serif;
     font-weight: $fw;
     font-size: $fs;
@@ -10,11 +10,10 @@
     color: $color;
 }
 
-@mixin heading($fs: '20px', $color: colors.$WHITE, $fw: 'normal', $lh: '130px') {
+@mixin heading($fs: 20px, $color: colors.$WHITE, $fw: normal, $lh: 50px) {
     font-family: 'Cardo', 'serif';
     font-weight: $fw;
     font-size: $fs;
     line-height: $lh;
-    letter-spacing: -1.5%;
     color: $color;
 }

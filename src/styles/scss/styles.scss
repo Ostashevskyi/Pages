@@ -1,13 +1,16 @@
 @use './utilities/colors';
 @use './utilities/text';
 @use './utilities/flex';
+
 @use './components/button';
 @use './components/quoteblock';
 @use './components/form';
 @use './components/social_btns';
-@use './header/header';
+
+@use './main-page/header/header';
 @use './components/burger-menu';
-@use './main/welcome-part';
+@use './main-page/main/welcome-part';
+@use './main-page/main/authors-book-includes';
 
 
 * {
@@ -28,8 +31,12 @@ a {
 
 body {
     background: colors.$BLUE;
-    max-width: 1300px;
-    margin: 0 auto;
+}
+
+.wrapper {
+    @media (max-width: 768px) {
+        position: absolute;
+    }
 }
 
 
