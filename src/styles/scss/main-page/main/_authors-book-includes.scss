@@ -1,0 +1,68 @@
+@use '../../components/button';
+@use '../../utilities/colors';
+@use '../../utilities/flex';
+@use '../../utilities/list';
+@use '../../utilities/text';
+@use '../../utilities/center';
+
+.main__book_includes {
+    background-color: colors.$WHITE;
+    .book__includes_content {
+        @include flex.flex($ai: center, $jc: center);
+        flex-direction: column;
+        h3 {
+            margin: 145px 0px 20px 0px;
+            @include text.heading($color: colors.$BLUE, $fs: 45px);
+            
+        }
+        .line {
+            width: 55px;
+            border: 1px solid colors.$YELLOW;
+            margin-bottom: 55px;
+        }
+        .book_includes__books {
+            margin-bottom: 150px;
+            @include flex.flex($ai: center, $jc: space-between);
+            @media (max-width: 768px) {
+                flex-direction: column;
+                padding: 0px 15px;
+            }
+            .book_includes__books_book {
+                margin: 0px 50px 50px 0px;
+                @include flex.flex($ai: center);
+                .book__img {
+                    img {
+                        width: 300px;
+                        height: 400px;
+                    }
+                }
+                .book__info {
+                    margin-left: 40px;
+                    h4 {
+                        @include text.heading($color: colors.$BLUE, $fs: 32px);
+                        margin-bottom: 15px;
+                    }
+                    p {
+                        @include text.paragraph($color: colors.$GREY, $lh: 150%);
+                        letter-spacing: -1px;
+                        margin-bottom: 30px;
+                    }
+                    @include list.ul-list($color: colors.$BLUE, $spanColor: colors.$GREY);
+                    ul {
+                        @include flex.flex($ai: center, $jc: space-between);
+                        margin-bottom: 30px;
+                        li {
+                            &:first-child {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                    button {
+                        @include button.btn($type: secondary);
+                    }
+                }
+            }
+                
+        }
+    }
+}
