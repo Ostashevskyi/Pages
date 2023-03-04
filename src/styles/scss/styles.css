@@ -490,7 +490,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li::marker {
 }
 main .main__welcome_part .welcome_part__info .welcome__info_list ul li span {
   font-weight: 300;
-  color: #B4C7E7;
+  color: #DCE1E9;
 }
 main .main__welcome_part .welcome_part__info .welcome__info_list ul {
   margin-left: 20px;
@@ -738,6 +738,76 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   font-size: 22px;
   line-height: 120%;
   color: #FFCA42;
+}
+
+.main__trusted_section {
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main__trusted_section .trusted__content .trusted__title h2 {
+  text-align: center;
+  margin: 130px 0px 20px 0px;
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 50px;
+  color: #1B3764;
+}
+.main__trusted_section .trusted__content .trusted__title .line {
+  width: 55px;
+  border: 1px solid #FFCA42;
+  margin: 0px auto 40px auto;
+}
+.main__trusted_section .trusted__companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__trusted_section .trusted__companies .trusted__company_block {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  max-width: 325px;
+  max-height: 200px;
+  margin-bottom: 100px;
+}
+.main__trusted_section .trusted__companies .trusted__company_block:last-child {
+  margin-bottom: 140px;
+}
+.main__trusted_section .trusted__companies .trusted__company_block:nth-child(3n+1) img {
+  width: 100px;
+  height: 100px;
+}
+.main__trusted_section .trusted__companies .trusted__company_block img {
+  width: 150px;
+  height: 100px;
+}
+.main__trusted_section .trusted__companies .trusted__company_block p {
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 50px;
+  color: #1B3764;
+}
+.main__trusted_section .trusted__companies .trusted__company_block p:last-child {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 170%;
+  color: #969AA0;
+}
+@media (max-width: 1023px) {
+  .main__trusted_section .trusted__companies {
+    flex-direction: column;
+  }
+  .main__trusted_section .trusted__companies .trusted__com {
+    width: 500px;
+    height: 375px;
+  }
 }
 
 * {

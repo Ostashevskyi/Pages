@@ -70,7 +70,7 @@ main {
                 }
             }
             .welcome__info_list {
-                @include list.ul-list($color: colors.$WHITE, $spanColor: colors.$LIGHT_BLUE);
+                @include list.ul-list($color: colors.$WHITE, $spanColor: colors.$LIGHT_GREY);
                 ul {
                     margin-left: 20px;
                     display: flex;
