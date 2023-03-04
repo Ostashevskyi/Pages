@@ -6,11 +6,12 @@
 @use './components/quoteblock';
 @use './components/form';
 @use './components/social_btns';
+@use './components/burger-menu';
 
 @use './main-page/header/header';
-@use './components/burger-menu';
 @use './main-page/main/welcome-part';
 @use './main-page/main/authors-book-includes';
+@use './main-page/main/about-author';
 
 
 * {
