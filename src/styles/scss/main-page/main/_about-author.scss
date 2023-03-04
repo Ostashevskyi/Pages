@@ -1,0 +1,73 @@
+@use '../../components/button';
+@use '../../utilities/colors';
+@use '../../utilities/flex';
+@use '../../utilities/list';
+@use '../../utilities/text';
+@use '../../utilities/center';
+@use '../../components/line';
+
+
+.main__about_author {
+    background: colors.$ULTRA_LIGHT_BLUE;
+    .about__content {
+        padding: 150px 0px;
+        @include flex.flex($ai: center, $jc: space-around);
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            padding: 150px 15px;
+        }
+        .about__img {
+            margin-right: 150px;
+            img {
+                width: 600px;
+                height: 700px;
+            }
+        }
+        .about__title {
+            h2 {
+                @include text.heading($color: colors.$BLUE, $fs: 45px);
+                margin-bottom: 20px;
+            }
+            .line {
+                @include line.line;
+                margin-bottom: 20px;
+            }
+            .p-after{
+                @include text.paragraph($color: colors.$GREY, $lh: 150%);
+                margin-bottom: 50px;
+            }
+        }
+        .about__stats {
+            @include flex.flex($jc: space-between, $ai: center);
+            margin-bottom: 40px;
+            .line {
+                transform: rotate(90deg);
+                width: 70px;
+            }
+            .about_stat {
+                p {
+                    &:first-child {
+                        @include text.heading($color: colors.$BLUE, $fs: 55px);
+                    }
+                    @include text.paragraph($color: colors.$GREY, $fs: 16px);
+                }
+            }
+        }
+        .about__qr_block {
+            background: colors.$BLUE;
+            @include flex.flex($ai: center);
+            padding: 15px;
+            max-width: 480px;
+            .qr__title {
+                margin-left: 40px;
+                p {
+                    &:first-child{
+                        @include text.heading($color: colors.$YELLOW, $fs: 22px, $lh: 120%);
+                    }
+                    @include text.paragraph($color: colors.$GREY);
+                }
+                
+            }
+        }
+    }
+}

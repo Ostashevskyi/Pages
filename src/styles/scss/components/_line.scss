@@ -1,0 +1,6 @@
+@use '../utilities/colors';
+
+@mixin line {
+    width: 55px;
+    border: 1px solid colors.$YELLOW;
+}
