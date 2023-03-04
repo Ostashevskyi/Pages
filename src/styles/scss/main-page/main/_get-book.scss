@@ -1,0 +1,46 @@
+@use '../../utilities/flex';
+@use '../../utilities/text';
+@use '../../components/social_btns';
+@use '../../utilities/colors';
+@use '../../components/button';
+@use '../../utilities/center';
+@use '../../components/line';
+
+
+
+.main__get_book {
+    .get__book_content {
+        @include flex.flex($ai:center);
+        .get__book_info {
+            margin: 120px 0px;
+            max-width: 600px;
+            h2 {
+                @include text.heading($fs: 45px, $fw: 700);
+                margin-bottom: 20px;
+            }
+            .line {
+                @include line.line;
+                margin-bottom: 20px;
+            }
+            p {
+                @include text.paragraph($color: colors.$LIGHT_GREY);
+                margin-bottom: 30px;
+            }
+            button {
+                @include button.btn;
+                color: colors.$WHITE;
+            }
+        
+        }
+        .get__book_img {
+            margin: 30px 0px;
+        }
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            .get__book_img {
+                margin: 20px 0px 60px 0px;
+            }
+        }
+    }
+
+}
