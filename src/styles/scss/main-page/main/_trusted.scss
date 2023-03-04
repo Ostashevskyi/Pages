@@ -1,0 +1,64 @@
+@use '../../components/button';
+@use '../../utilities/colors';
+@use '../../utilities/flex';
+@use '../../utilities/list';
+@use '../../utilities/text';
+@use '../../components/line';
+@use '../../utilities/center';
+
+
+.main__trusted_section {
+    background: #fff;
+    @include flex.flex;
+    .trusted__content{
+        .trusted__title {
+            h2 {
+                text-align: center;
+                margin: 130px 0px 20px 0px;
+                @include text.heading($color: colors.$BLUE, $fs: 45px)
+            }
+            .line {
+                @include line.line;
+                margin: 0px auto 40px auto;
+            }
+        }
+    }
+    .trusted__companies {
+        @include flex.flex($ai: center, $jc: space-between);
+        .trusted__company_block {
+            @include flex.flex($ai: center);
+            flex-direction: column;
+            text-align: center;
+            max-width: 325px;
+            max-height: 200px;
+            margin-bottom: 100px;
+            &:last-child {
+                margin-bottom: 140px;
+            }
+            &:nth-child(3n+1) {
+                img {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            img {
+                width: 150px;
+                height: 100px;
+            }
+            p {
+                @include text.heading($fs: 24px, $color: colors.$BLUE);
+                &:last-child{
+                    @include text.paragraph($color: colors.$GREY);
+                }
+            }
+        }
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            .trusted__com{
+                width: 500px;
+                height: 375px;
+            }
+        }
+    }
+
+}
