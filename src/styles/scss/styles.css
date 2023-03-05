@@ -202,7 +202,7 @@
     transform: translateY(-200%);
     top: 0;
     padding: 50px 20px 20px 20px;
-    background-color: #DCE1E9;
+    background-color: #8d9696;
     width: 100%;
     transition: transform 0.5s;
     text-align: center;
@@ -807,6 +807,61 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   .main__trusted_section .trusted__companies .trusted__com {
     width: 500px;
     height: 375px;
+  }
+}
+
+.main__get_book .get__book_content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main__get_book .get__book_content .get__book_info {
+  margin: 120px 0px;
+  max-width: 600px;
+}
+.main__get_book .get__book_content .get__book_info h2 {
+  font-family: "Cardo", "serif";
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.main__get_book .get__book_content .get__book_info .line {
+  width: 55px;
+  border: 1px solid #FFCA42;
+  margin-bottom: 20px;
+}
+.main__get_book .get__book_content .get__book_info p {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 170%;
+  color: #DCE1E9;
+  margin-bottom: 30px;
+}
+.main__get_book .get__book_content .get__book_info button {
+  width: 220px;
+  height: 65px;
+  border: 1px solid #FFCA42;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 125%;
+  color: #1B3764;
+  background-color: transparent;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+.main__get_book .get__book_content .get__book_img {
+  margin: 30px 0px;
+}
+@media (max-width: 1023px) {
+  .main__get_book .get__book_content {
+    flex-direction: column;
+  }
+  .main__get_book .get__book_content .get__book_img {
+    margin: 20px 0px 60px 0px;
   }
 }
 
