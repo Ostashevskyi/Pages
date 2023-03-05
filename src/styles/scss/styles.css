@@ -816,8 +816,13 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   justify-content: flex-start;
 }
 .main__get_book .get__book_content .get__book_info {
-  margin: 120px 0px;
+  margin: 120px 125px 120px 0px;
   max-width: 600px;
+}
+@media (max-width: 1023px) {
+  .main__get_book .get__book_content .get__book_info {
+    margin: 120px 0px;
+  }
 }
 .main__get_book .get__book_content .get__book_info h2 {
   font-family: "Cardo", "serif";
@@ -867,6 +872,84 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 
 .what-learn {
   background: #FFFFFF;
+}
+.what-learn .learn__content .learn__content-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.what-learn .learn__content .learn__content-title h2 {
+  margin: 145px 0px 20px 0px;
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 50px;
+  color: #1B3764;
+}
+.what-learn .learn__content .learn__content-title .line {
+  width: 55px;
+  border: 1px solid #FFCA42;
+  margin-bottom: 55px;
+}
+.what-learn .learn__content .learn__content-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-bottom: 140px;
+}
+.what-learn .learn__content .learn__content-info .learn__cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.what-learn .learn__content .learn__content-info .learn__cards .learn__card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 40px 35px;
+  background: #F4F8FF;
+  margin: 0px 30px 30px 0px;
+}
+.what-learn .learn__content .learn__content-info .learn__cards .learn__card .card__number {
+  margin-bottom: 30px;
+}
+.what-learn .learn__content .learn__content-info .learn__cards .learn__card .card__number .number__bg {
+  background: #FFCA42;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 50px;
+  color: #1B3764;
+}
+.what-learn .learn__content .learn__content-info .learn__cards .learn__card .card__text p {
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 140%;
+  color: #1B3764;
+}
+@media (max-width: 1023px) {
+  .what-learn .learn__content .learn__content-info .learn__cards {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1023px) {
+  .what-learn .learn__content .learn__content-info {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 * {

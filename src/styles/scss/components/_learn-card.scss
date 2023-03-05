@@ -1,6 +1,39 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
 
-.learn__card {
-    width: 290px;
-    height: 300px;
-
+@mixin cards {
+    .learn__cards {
+        @include flex.flex;
+        flex-wrap: wrap;
+        .learn__card {
+            width: 300px;
+            height: 300px;
+            @include flex.flex;
+            flex-direction: column;
+            padding: 40px 35px;
+            background: colors.$ULTRA_LIGHT_BLUE;
+            margin: 0px 30px 30px 0px;
+            .card__number {
+                margin-bottom: 30px;
+                .number__bg {
+                    background: colors.$YELLOW;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    @include flex.flex($ai: center, $jc: center);
+                    @include text.heading($color: colors.$BLUE, $fs: 24px);
+                }
+            }
+            .card__text {
+                p {
+                    @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 140%);
+                }
+            }
+        }
+        @media (max-width: 1023px) {
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+    }
 }

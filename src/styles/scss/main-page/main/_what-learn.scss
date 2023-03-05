@@ -1,12 +1,38 @@
 @use '../../components/button';
+@use '../../components/line';
+@use '../../components/learn-card';
+
 @use '../../utilities/colors';
 @use '../../utilities/flex';
 @use '../../utilities/list';
 @use '../../utilities/text';
 @use '../../utilities/center';
-@use '../../components/line';
+
 
 .what-learn {
     background: colors.$WHITE;
-   
+    .learn__content {
+        .learn__content-title {
+            @include flex.flex($jc: center, $ai: center);
+            flex-direction: column;
+            h2 {
+                margin: 145px 0px 20px 0px;
+                @include text.heading($color: colors.$BLUE, $fs: 45px);
+            }
+            .line {
+                @include line.line;
+                margin-bottom: 55px;
+            }
+        }
+        .learn__content-info {
+            @include flex.flex;
+            @include learn-card.cards;
+            padding-bottom: 140px;
+
+            @media (max-width: 1023px) {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
 }
