@@ -202,7 +202,7 @@
     transform: translateY(-200%);
     top: 0;
     padding: 50px 20px 20px 20px;
-    background-color: #DCE1E9;
+    background-color: #8d9696;
     width: 100%;
     transition: transform 0.5s;
     text-align: center;
@@ -808,6 +808,10 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
     width: 500px;
     height: 375px;
   }
+}
+
+.what-learn {
+  background: #FFFFFF;
 }
 
 * {
