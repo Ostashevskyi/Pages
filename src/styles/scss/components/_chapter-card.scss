@@ -1,0 +1,37 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+@use '../utilities/list';
+
+.chapter__content-card {
+    width: 630px;
+    height: 250px;
+    background: colors.$WHITE;
+    padding: 50px;
+    
+    &:nth-child(odd) {
+        margin-right: 40px;
+        @media (max-width: 1023px) {
+            margin-right: 0px;  
+        }
+    }
+
+
+    margin-bottom: 40px;
+    h3 {
+        @include text.heading($color: colors.$BLUE, $fs: 24px);
+        margin-bottom: 15px;
+    }
+    p {
+        @include text.paragraph($color: colors.$GREY, $fs: 19px);
+        margin-bottom: 15px;
+    }
+    ul {
+        margin: 20px 0px 0px 20px;
+        @include flex.flex($jc: space-between);
+    }
+    @include list.ul-list($color: colors.$BLUE, $spanColor: colors.$GREY);
+
+  
+    
+}
