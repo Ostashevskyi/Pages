@@ -921,6 +921,9 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   .what-learn .learn__content .learn__content-info {
     flex-direction: column;
   }
+  .what-learn .learn__content .learn__content-info .learn__img {
+    margin: 0 auto;
+  }
 }
 
 .chapter__content-card {
