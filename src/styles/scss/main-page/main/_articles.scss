@@ -1,0 +1,34 @@
+@use '../../components/button';
+@use '../../components/line';
+@use '../../components/articles-card';
+@use '../../utilities/colors';
+@use '../../utilities/flex';
+@use '../../utilities/list';
+@use '../../utilities/text';
+@use '../../utilities/center';
+
+
+.main__articles {
+    background: colors.$ULTRA_LIGHT_BLUE;
+    .articles__content {
+        padding: 145px 0px;
+        .articles__title {
+            h3 {
+                text-align: center;
+                @include text.heading($color: colors.$BLUE, $fs: 45px);
+                margin-bottom: 20px;
+            }
+            .line {
+                margin: 0 auto;
+                @include line.line;
+                margin-bottom: 50px;
+            }
+        }
+        .articeles__blocks {
+            @include flex.flex($ai: center, $jc: space-between);
+            @media (max-width: 1023px) {
+                flex-direction: column;
+            }
+        }
+    }
+}

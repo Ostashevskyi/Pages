@@ -1,0 +1,30 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+
+.articles__block {
+    max-width: 410px;
+    .articles__block_text {
+        margin-top: -5px;
+        background: colors.$WHITE;
+        padding: 30px 25px;
+        h3 {
+            @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 120%);
+            margin-bottom: 10px;
+        }
+        p {
+            @include text.paragraph($color: colors.$GREY, $fs: 19px);
+            margin-bottom: 25px;
+        }
+        div {
+            a {
+                @include text.heading($color: colors.$BLUE, $fs: 18px, $lh: 125%);
+                border-bottom: 1px solid colors.$BLUE;
+                margin-right: 90px;
+            }
+            span {
+                @include text.paragraph($color: colors.$BLUE, $fs: 17px);
+            }
+        }
+    }
+}

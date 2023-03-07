@@ -3,7 +3,6 @@
 @use '../utilities/text';
 
 .readers-about__card {
-    // @include flex.flex($ai: center, $jc: center);
     flex-direction: column;
     width: 370px;
     height: 310px;
