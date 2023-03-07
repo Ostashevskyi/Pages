@@ -1,9 +1,9 @@
 @use '../utilities/colors';
 @use '../utilities/flex';
 
-@mixin btn($type: 'primary') {
+@mixin btn($type: 'secondary') {
         @include flex.flex;
-        .header__icons {
+        .icons {
             @include flex.flex(center, center);
             min-width: 45px;
             min-height: 45px;

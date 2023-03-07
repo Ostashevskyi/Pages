@@ -1,0 +1,99 @@
+@use './utilities/flex';
+@use './utilities/text';
+@use './components/social_btns';
+@use './utilities/colors';
+@use './utilities/center';
+
+footer {
+    .footer__content {
+        .footer__info {
+            @include flex.flex($jc: space-between);
+            padding: 85px 0px 70px 0px;
+            border-bottom: 1px solid colors.$GREY;
+           
+            .info__data {
+                margin-right: 180px;
+                .info__logo {
+                    @include flex.flex($ai: center);
+                    margin-bottom: 25px;
+                    .logo__title {
+                        a {
+                            @include text.paragraph($color: colors.$WHITE, $fs: 30px, $fw: 700);
+                            margin-left: 10px;
+                        }
+                    }
+                }
+                .footer__socialmedia {
+                    @include flex.flex;
+                    @include social_btns.btn;
+                }
+            }
+            @media (max-width: 1023px) {
+                flex-direction: column;
+                .info__data {
+                    margin: 0px 0px 50px 0px;
+                    width: 100%;
+                    .info__logo, .footer__socialmedia {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .footer__lists {
+            @include flex.flex($jc: space-between);
+            width: 100%;
+            .footer__list {
+                h3 {
+                    @include text.heading($color: colors.$WHITE, $fs: 24px, $lh: 170%);
+                    margin-bottom: 20px;
+                }
+                ul {
+                    margin-left: 10px;
+                    li {
+                        a {
+                            @include text.paragraph($color: colors.$LIGHT_BLUE, $fs: 18px, $lh: 205%);
+                        }
+                        &::before {
+                            content: url('../../images/icons/marker.svg');
+                            position: relative;
+                            top: -2px;
+                            left: -10px;
+                        }
+                    }
+                }
+            }
+            .footer__touch {
+                h3 {
+                    @include text.heading($color: colors.$WHITE, $fs: 24px, $lh: 170%);
+                    margin-bottom: 30px;
+                }
+                ul {
+                    li {
+                        @include text.heading($color: colors.$WHITE, $fs: 18px, $lh: 125%);
+                        margin-bottom: 15px;
+                        span {
+                            @include text.paragraph($color: colors.$LIGHT_BLUE, $fs: 18px, $lh: 180%);
+                        }
+                    }
+                }
+            }
+            @media (max-width: 1023px) {
+                padding: 0px 110px;
+                flex-wrap: wrap;
+                .footer__touch {
+                    margin-top: 50px;
+                }
+            }
+        }
+    }
+    .footer__copyright {
+        p {
+            text-align: center;
+            margin: 20px 0px;
+            @include text.paragraph($color: colors.$LIGHT_BLUE, $fs: 18px, $lh: 180%);
+            span {
+                color: colors.$WHITE;
+            }
+        }
+    }
+}

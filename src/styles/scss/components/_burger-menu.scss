@@ -17,6 +17,7 @@
                     }
                 }
                 .header__burger-btn {
+                    position: fixed;
                     span {
                         &:nth-child(1) {
                             transform: translateY(0) rotate(45deg);
