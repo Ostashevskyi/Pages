@@ -1,16 +1,19 @@
-@use '../../components/button';
-@use '../../utilities/colors';
-@use '../../utilities/flex';
-@use '../../utilities/list';
-@use '../../utilities/text';
-@use '../../components/line';
-@use '../../utilities/center';
+@use '../components/button';
+@use '../utilities/colors';
+@use '../utilities/flex';
+@use '../utilities/list';
+@use '../utilities/text';
+@use '../components/line';
+@use '../utilities/center';
 
 
 .main__trusted_section {
     background: #fff;
     @include flex.flex;
     .trusted__content{
+        @media (min-width: 1024px) and (max-width: 1439px) {
+            padding: 0px 30px;
+        }
         .trusted__title {
             h2 {
                 text-align: center;

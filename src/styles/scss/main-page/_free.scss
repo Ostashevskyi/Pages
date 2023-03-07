@@ -1,11 +1,11 @@
-@use '../../components/button';
-@use '../../components/line';
+@use '../components/button';
+@use '../components/line';
 
-@use '../../utilities/colors';
-@use '../../utilities/flex';
-@use '../../utilities/list';
-@use '../../utilities/text';
-@use '../../utilities/center';
+@use '../utilities/colors';
+@use '../utilities/flex';
+@use '../utilities/list';
+@use '../utilities/text';
+@use '../utilities/center';
 
 .main__free {
     background: colors.$WHITE;

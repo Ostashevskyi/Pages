@@ -11,9 +11,10 @@
     
     &:nth-child(odd) {
         margin-right: 40px;
-        @media (max-width: 1023px) {
+        @media (max-width: 1439px) {
             margin-right: 0px;  
         }
+
     }
 
 

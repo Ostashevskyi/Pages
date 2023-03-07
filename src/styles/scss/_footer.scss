@@ -28,7 +28,7 @@ footer {
                     @include social_btns.btn;
                 }
             }
-            @media (max-width: 1023px) {
+            @media (max-width: 1439px) {
                 flex-direction: column;
                 .info__data {
                     margin: 0px 0px 50px 0px;
@@ -78,10 +78,17 @@ footer {
                 }
             }
             @media (max-width: 1023px) {
-                padding: 0px 110px;
+                padding: 0px 50px;
                 flex-wrap: wrap;
                 .footer__touch {
                     margin-top: 50px;
+                }
+            }
+            @media (min-width: 1024px) and (max-width: 1439px) {
+                padding: 0px 110px;
+                flex-wrap: wrap;
+                .footer__touch {
+                    max-width: 350px;
                 }
             }
         }

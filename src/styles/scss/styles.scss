@@ -3,16 +3,16 @@
 @use './components/burger-menu';
 
 @use './header';
-@use './main-page/main/welcome-part';
-@use './main-page/main/authors-book-includes';
-@use './main-page/main/about-author';
-@use './main-page/main/trusted';
-@use './main-page/main/get-book';
-@use './main-page/main/what-learn';
-@use './main-page/main/chapters';
-@use './main-page/main/readers-say';
-@use './main-page/main/articles';
-@use './main-page/main/free';
+@use './main-page/welcome-part';
+@use './main-page/authors-book-includes';
+@use './main-page/about-author';
+@use './main-page/trusted';
+@use './main-page/get-book';
+@use './main-page/what-learn';
+@use './main-page/chapters';
+@use './main-page/readers-say';
+@use './main-page/articles';
+@use './main-page/free';
 @use './footer';
 
 

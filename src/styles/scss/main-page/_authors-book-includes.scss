@@ -1,10 +1,10 @@
-@use '../../components/button';
-@use '../../components/line';
-@use '../../utilities/colors';
-@use '../../utilities/flex';
-@use '../../utilities/list';
-@use '../../utilities/text';
-@use '../../utilities/center';
+@use '../components/button';
+@use '../components/line';
+@use '../utilities/colors';
+@use '../utilities/flex';
+@use '../utilities/list';
+@use '../utilities/text';
+@use '../utilities/center';
 
 .main__book_includes {
     background-color: colors.$WHITE;
@@ -27,11 +27,21 @@
                 flex-direction: column;
                 padding: 0px 15px;
             }
+            @media (min-width: 1024px) and (max-width: 1439px) {
+                margin-left: 30px;
+            }
             .book_includes__books_book {
+                @media (min-width: 1024px) and (max-width: 1439px) {
+                    align-items: normal;
+                }
                 margin: 0px 50px 50px 0px;
                 @include flex.flex($ai: center);
                 .book__img {
                     img {
+                        @media (min-width: 1024px) and (max-width: 1439px) {
+                            width: 200px; 
+                            height: 300px;  
+                        }
                         width: 300px;
                         height: 400px;
                     }
@@ -39,6 +49,9 @@
                 .book__info {
                     margin-left: 40px;
                     h4 {
+                        @media (min-width: 1024px) and (max-width: 1439px) {
+                            font-size: 28px;
+                        }
                         @include text.heading($color: colors.$BLUE, $fs: 32px);
                         margin-bottom: 15px;
                     }

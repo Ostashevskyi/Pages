@@ -1,12 +1,12 @@
-@use '../../components/button';
-@use '../../components/line';
-@use '../../components/chapter-card';
+@use '../components/button';
+@use '../components/line';
+@use '../components/chapter-card';
 
-@use '../../utilities/colors';
-@use '../../utilities/flex';
-@use '../../utilities/list';
-@use '../../utilities/text';
-@use '../../utilities/center';
+@use '../utilities/colors';
+@use '../utilities/flex';
+@use '../utilities/list';
+@use '../utilities/text';
+@use '../utilities/center';
 
 .main__chapter {
     @include flex.flex;
@@ -35,6 +35,10 @@
                    flex-direction: column; 
                    justify-content: center;
                    align-items: center;
+                }
+                @media (min-width: 1024px) and (max-width: 1439px) {
+                    justify-content: center;
+                    align-items: center;
                 }
             }
             .chapter__content-btn {

@@ -1,12 +1,12 @@
-@use '../../components/comment-card';
-@use '../../components/button';
-@use '../../components/line';
+@use '../components/comment-card';
+@use '../components/button';
+@use '../components/line';
 
-@use '../../utilities/colors';
-@use '../../utilities/flex';
-@use '../../utilities/list';
-@use '../../utilities/text';
-@use '../../utilities/center';
+@use '../utilities/colors';
+@use '../utilities/flex';
+@use '../utilities/list';
+@use '../utilities/text';
+@use '../utilities/center';
 
 .main__readers-about {
     background: colors.$WHITE;
@@ -15,6 +15,9 @@
         @include flex.flex($ai: center);
 
         @media (max-width: 1023px) {
+            flex-direction: column;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
             flex-direction: column;
         }
 
@@ -57,6 +60,11 @@
                 flex-direction: row;
                 align-items: normal;
                 
+            }
+            
+            @media (min-width: 1024px) and (max-width: 1439px) {
+                // flex-wrap: nowrap;
+                flex-direction: row;
             }
         }
     }

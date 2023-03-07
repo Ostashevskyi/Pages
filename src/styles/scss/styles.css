@@ -480,15 +480,31 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
     padding: 0px 15px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__book_includes .book__includes_content .book_includes__books {
+    margin-left: 30px;
+  }
+}
 .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book {
   margin: 0px 50px 50px 0px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book {
+    align-items: normal;
+  }
+}
 .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__img img {
   width: 300px;
   height: 400px;
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__img img {
+    width: 200px;
+    height: 300px;
+  }
 }
 .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info {
   margin-left: 40px;
@@ -500,6 +516,11 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   line-height: 50px;
   color: #1B3764;
   margin-bottom: 15px;
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info h4 {
+    font-size: 28px;
+  }
 }
 .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info p {
   font-family: "Inter", sans-serif;
@@ -563,8 +584,18 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
     padding: 150px 15px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__about_author .about__content {
+    flex-direction: column;
+  }
+}
 .main__about_author .about__content .about__img {
   margin-right: 150px;
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__about_author .about__content .about__img {
+    margin-bottom: 50px;
+  }
 }
 .main__about_author .about__content .about__img img {
   width: 600px;
@@ -578,10 +609,20 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   color: #1B3764;
   margin-bottom: 20px;
 }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__about_author .about__content .about__title h2 {
+    text-align: center;
+  }
+}
 .main__about_author .about__content .about__title .line {
   width: 55px;
   border: 1px solid #FFCA42;
   margin-bottom: 20px;
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__about_author .about__content .about__title .line {
+    margin: 0 auto;
+  }
 }
 .main__about_author .about__content .about__title .p-after {
   font-family: "Inter", sans-serif;
@@ -623,6 +664,11 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   padding: 15px;
   max-width: 480px;
 }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__about_author .about__content .about__qr_block {
+    margin: 0 auto;
+  }
+}
 .main__about_author .about__content .about__qr_block .qr__title {
   margin-left: 40px;
 }
@@ -646,6 +692,11 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__trusted_section .trusted__content {
+    padding: 0px 30px;
+  }
 }
 .main__trusted_section .trusted__content .trusted__title h2 {
   text-align: center;
@@ -715,6 +766,11 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__get_book .get__book_content {
+    padding: 0px 30px;
+  }
 }
 .main__get_book .get__book_content .get__book_info {
   margin: 120px 125px 120px 0px;
@@ -846,10 +902,24 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
     margin-bottom: 50px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .what-learn .learn__content .learn__content-info .learn__cards {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .what-learn .learn__content .learn__content-info .learn__cards .learn__img {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1023px) {
   .what-learn .learn__content .learn__content-info {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .what-learn .learn__content .learn__content-info {
+    flex-direction: column;
   }
 }
 
@@ -863,7 +933,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 .chapter__content-card:nth-child(odd) {
   margin-right: 40px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1439px) {
   .chapter__content-card:nth-child(odd) {
     margin-right: 0px;
   }
@@ -949,6 +1019,12 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
     align-items: center;
   }
 }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__chapter .chapter__content .chapter__content-info .chapter__content-cards {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .main__chapter .chapter__content .chapter__content-info .chapter__content-btn {
   display: flex;
   align-items: center;
@@ -1007,12 +1083,26 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
     margin-top: 20px;
   }
 }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .readers-about__card:last-child {
+    position: relative;
+    transform: translateY(0%);
+    top: auto;
+    left: auto;
+    margin-top: 20px;
+  }
+}
 .readers-about__card:first-child {
   margin-bottom: 30px;
 }
 @media (max-width: 1023px) {
   .readers-about__card:first-child {
     margin-right: 10px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .readers-about__card:first-child {
+    margin: 0px 20px 0px 0px;
   }
 }
 .readers-about__card .card__user-data {
@@ -1062,6 +1152,11 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   justify-content: flex-start;
 }
 @media (max-width: 1023px) {
+  .main__readers-about .readers-about__content {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
   .main__readers-about .readers-about__content {
     flex-direction: column;
   }
@@ -1128,6 +1223,11 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
     align-items: normal;
   }
 }
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__readers-about .readers-about__content .readers-about__cards {
+    flex-direction: row;
+  }
+}
 
 .articles__block {
   max-width: 410px;
@@ -1135,6 +1235,11 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 @media (max-width: 1023px) {
   .articles__block {
     margin-bottom: 50px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .articles__block:last-child {
+    margin-top: 50px;
   }
 }
 .articles__block .articles__block_text {
@@ -1204,6 +1309,12 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 @media (max-width: 1023px) {
   .main__articles .articles__content .articeles__blocks {
     flex-direction: column;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__articles .articles__content .articeles__blocks {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -1331,7 +1442,7 @@ footer .footer__content .footer__info .info__data .footer__socialmedia .icons {
   background: transparent;
   border: 1px solid #FFCA42;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1439px) {
   footer .footer__content .footer__info {
     flex-direction: column;
   }
@@ -1398,11 +1509,20 @@ footer .footer__content .footer__lists .footer__touch ul li span {
 }
 @media (max-width: 1023px) {
   footer .footer__content .footer__lists {
-    padding: 0px 110px;
+    padding: 0px 50px;
     flex-wrap: wrap;
   }
   footer .footer__content .footer__lists .footer__touch {
     margin-top: 50px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  footer .footer__content .footer__lists {
+    padding: 0px 110px;
+    flex-wrap: wrap;
+  }
+  footer .footer__content .footer__lists .footer__touch {
+    max-width: 350px;
   }
 }
 footer .footer__copyright p {

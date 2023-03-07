@@ -1,12 +1,12 @@
-@use '../../components/button';
-@use '../../components/line';
-@use '../../components/learn-card';
+@use '../components/button';
+@use '../components/line';
+@use '../components/learn-card';
 
-@use '../../utilities/colors';
-@use '../../utilities/flex';
-@use '../../utilities/list';
-@use '../../utilities/text';
-@use '../../utilities/center';
+@use '../utilities/colors';
+@use '../utilities/flex';
+@use '../utilities/list';
+@use '../utilities/text';
+@use '../utilities/center';
 
 
 .what-learn {
@@ -32,6 +32,9 @@
             @media (max-width: 1023px) {
                 flex-direction: column;
                 align-items: center;
+            }
+            @media (min-width: 1024px) and (max-width: 1439px) {
+                flex-direction: column;
             }
         }
     }

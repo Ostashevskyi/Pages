@@ -1,16 +1,19 @@
-@use '../../utilities/flex';
-@use '../../utilities/text';
-@use '../../components/social_btns';
-@use '../../utilities/colors';
-@use '../../components/button';
-@use '../../utilities/center';
-@use '../../components/line';
+@use '../utilities/flex';
+@use '../utilities/text';
+@use '../components/social_btns';
+@use '../utilities/colors';
+@use '../components/button';
+@use '../utilities/center';
+@use '../components/line';
 
 
 
 .main__get_book {
     .get__book_content {
         @include flex.flex($ai:center);
+        @media (min-width: 1024px) and (max-width: 1439px) {
+            padding: 0px 30px;
+        }
         .get__book_info {
             @media (max-width: 1023px) {
                 margin: 120px 0px;
