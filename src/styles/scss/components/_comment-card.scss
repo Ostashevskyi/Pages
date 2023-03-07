@@ -1,0 +1,56 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+
+.readers-about__card {
+    // @include flex.flex($ai: center, $jc: center);
+    flex-direction: column;
+    width: 370px;
+    height: 310px;
+    background: colors.$BLUE;
+    &:last-child {
+        @media (max-width: 1023px) {
+            position: initial;
+            transform: translateY(0%);
+            margin-top: 20px;
+        }
+        position: absolute;
+        top: 50%;
+        left: 110%;
+        transform: translateY(-50%);
+    }
+    &:first-child {
+        @media (max-width: 1023px) {
+            margin-right: 10px;
+        }
+        margin-bottom: 30px;
+    }
+    .card__user-data {
+        padding: 30px;
+        .card__user-info {
+            margin-bottom: 20px;
+            @include flex.flex($ai: center);
+            .user-info__img {
+                img {
+                    margin-right: 20px;
+                }
+            }
+            .user-info__username {
+                p {
+                    @include text.heading($color: colors.$WHITE, $fs: 24px, $lh: 150%);
+                }
+                img  {
+                    max-width: 75px;
+                }
+            }
+        }
+        .card__text {
+            h3 {
+                @include text.heading($color: colors.$WHITE, $fs: 22px);
+            }
+            p {
+                @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 150%);
+            }
+        }
+    }
+}

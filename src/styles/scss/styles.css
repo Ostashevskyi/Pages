@@ -1087,6 +1087,147 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   text-decoration: underline;
 }
 
+.readers-about__card {
+  flex-direction: column;
+  width: 370px;
+  height: 310px;
+  background: #1B3764;
+}
+.readers-about__card:last-child {
+  position: absolute;
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%);
+}
+@media (max-width: 1023px) {
+  .readers-about__card:last-child {
+    position: initial;
+    transform: translateY(0%);
+    margin-top: 20px;
+  }
+}
+.readers-about__card:first-child {
+  margin-bottom: 30px;
+}
+@media (max-width: 1023px) {
+  .readers-about__card:first-child {
+    margin-right: 10px;
+  }
+}
+.readers-about__card .card__user-data {
+  padding: 30px;
+}
+.readers-about__card .card__user-data .card__user-info {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.readers-about__card .card__user-data .card__user-info .user-info__img img {
+  margin-right: 20px;
+}
+.readers-about__card .card__user-data .card__user-info .user-info__username p {
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+.readers-about__card .card__user-data .card__user-info .user-info__username img {
+  max-width: 75px;
+}
+.readers-about__card .card__user-data .card__text h3 {
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
+.readers-about__card .card__user-data .card__text p {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 150%;
+  color: #969AA0;
+}
+
+.main__readers-about {
+  background: #FFFFFF;
+}
+.main__readers-about .readers-about__content {
+  padding: 140px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 1023px) {
+  .main__readers-about .readers-about__content {
+    flex-direction: column;
+  }
+}
+.main__readers-about .readers-about__content .readers-about__text {
+  max-width: 420px;
+  margin-right: 120px;
+}
+.main__readers-about .readers-about__content .readers-about__text h2 {
+  max-width: 320px;
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 50px;
+  color: #1B3764;
+  margin-bottom: 25px;
+}
+.main__readers-about .readers-about__content .readers-about__text .line {
+  width: 55px;
+  border: 1px solid #FFCA42;
+  margin-bottom: 30px;
+}
+.main__readers-about .readers-about__content .readers-about__text p {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 170%;
+  color: #969AA0;
+  margin-bottom: 40px;
+}
+.main__readers-about .readers-about__content .readers-about__text p:last-child {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 170%;
+  color: #1B3764;
+}
+.main__readers-about .readers-about__content .readers-about__text .text__rating {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.main__readers-about .readers-about__content .readers-about__text .text__rating span {
+  font-family: "Cardo", "serif";
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 50px;
+  color: #1B3764;
+  margin-left: 10px;
+}
+.main__readers-about .readers-about__content .readers-about__cards {
+  position: relative;
+  max-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (max-width: 1023px) {
+  .main__readers-about .readers-about__content .readers-about__cards {
+    max-height: none;
+    flex-direction: row;
+    align-items: normal;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

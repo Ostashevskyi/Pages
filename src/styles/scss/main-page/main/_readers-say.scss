@@ -1,0 +1,63 @@
+@use '../../components/comment-card';
+@use '../../components/button';
+@use '../../components/line';
+
+@use '../../utilities/colors';
+@use '../../utilities/flex';
+@use '../../utilities/list';
+@use '../../utilities/text';
+@use '../../utilities/center';
+
+.main__readers-about {
+    background: colors.$WHITE;
+    .readers-about__content {
+        padding: 140px 0px;
+        @include flex.flex($ai: center);
+
+        @media (max-width: 1023px) {
+            flex-direction: column;
+        }
+
+        .readers-about__text {
+            max-width: 420px;
+            margin-right: 120px;
+            h2 {
+                max-width: 320px;
+                @include text.heading($color: colors.$BLUE, $fs: 45px);
+                margin-bottom: 25px;
+            }
+            .line {
+                @include line.line;
+                margin-bottom: 30px;
+            }
+            p {
+                @include text.paragraph($color: colors.$GREY, $fs: 19px);
+                margin-bottom: 40px;
+                &:last-child {
+                    @include text.paragraph($color: colors.$BLUE, $fs: 19px);
+                }
+            }
+            .text__rating {
+                @include flex.flex($ai: center);
+                span {
+                    @include text.heading($color: colors.$BLUE, $fs: 22px);
+                    margin-left: 10px;
+                }
+            }
+        }
+        .readers-about__cards {
+            position: relative;
+            max-height: 650px;
+            @include flex.flex($jc: center, $ai: center);
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            @media (max-width: 1023px) {
+                max-height: none;
+                flex-direction: row;
+                align-items: normal;
+                
+            }
+        }
+    }
+}
