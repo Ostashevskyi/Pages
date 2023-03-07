@@ -4,6 +4,9 @@
 
 .articles__block {
     max-width: 410px;
+    @media (max-width: 1023px) {
+        margin-bottom: 50px;
+    }
     .articles__block_text {
         margin-top: -5px;
         background: colors.$WHITE;

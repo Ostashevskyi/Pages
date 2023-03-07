@@ -1231,6 +1231,11 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 .articles__block {
   max-width: 410px;
 }
+@media (max-width: 1023px) {
+  .articles__block {
+    margin-bottom: 50px;
+  }
+}
 .articles__block .articles__block_text {
   margin-top: -5px;
   background: #FFFFFF;
