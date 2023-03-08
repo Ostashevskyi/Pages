@@ -1,0 +1,87 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+@use '../components/button';
+@use '../components/line';
+
+
+.main__about-block {
+    background: colors.$WHITE;
+    @include flex.flex($ai: flex-end);
+    flex-direction: column;
+    .about-author {
+        min-width: 1820px;
+        margin: 160px 0px 0px 0px;
+        background: colors.$ULTRA_LIGHT_GREY;
+        @include flex.flex($ai: center, $jc: center);
+        flex-direction: column;
+        @media (max-width: 1023px) {
+            min-width: 0px;
+        }
+        .about-author__img{
+            margin: 150px 0px 80px 0px;
+        }
+        .about-author__info {
+            min-width: 1300px;
+            margin-bottom: 140px;
+            @include flex.flex($ai: center, $jc: space-between);
+            @media (max-width: 1023px) {
+                flex-direction: column;
+                min-width: 0px;
+                padding: 0px 20px;
+
+            }
+            .info__location-data {
+                background: colors.$WHITE;
+                .data-blocks {
+                    @include flex.flex;
+                    margin: 45px 65px;
+                    @media (max-width: 1023px) {
+                        margin: 45px 25px;
+                    }
+                    .data-headings {
+                        margin-right: 20px;
+                        @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 52px);
+                        @media (max-width: 1023px) {
+                            font-size: 15px;                       
+                        }
+                    }
+                    .data-paragraphs {
+                        @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 275%);
+                        @media (max-width: 1023px) {
+                            font-size: 15px; 
+                            line-height: 350%;
+                        }
+                    }
+                        p {
+                            img {
+                                @media (max-width: 1023px) {
+                                    max-width: 350px;
+                                    max-height: 200px;
+                                }
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .info__personal-data {
+                max-width: 600px;
+                h2 {
+                    @include text.heading($color: colors.$BLUE, $fs: 45px);
+                    margin-bottom: 20px;
+                }
+                .line {
+                    @include line.line;
+                    margin-bottom: 25px;
+                }
+                p {
+                    @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 180%);
+                    margin-bottom: 35px;
+                }
+                button {
+                    @include button.btn(primary);
+                }
+            }
+        }
+    }

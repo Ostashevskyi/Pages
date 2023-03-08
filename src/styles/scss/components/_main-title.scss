@@ -1,0 +1,28 @@
+@use '../utilities/flex';
+@use '../utilities/center';
+@use '../utilities/text';
+@use '../utilities/colors';
+@use '../components/line';
+
+
+.main-title__content {
+    .main-title__title {
+        text-align: center;
+        max-width: 630px;
+        margin: 140px auto 125px auto;
+        h1 {
+            @include text.heading($color: colors.$WHITE, $fs: 50px, $lh: 110%);
+            margin-bottom: 30px;
+        }
+        .line {
+            @include line.line;
+            margin: 0 auto 30px auto;
+        }
+        p {
+            @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 190%);
+        }
+        @media (max-width: 1023px) {
+            padding: 0px 20px;
+        }
+    }
+}
