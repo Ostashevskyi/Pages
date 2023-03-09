@@ -15,11 +15,30 @@
         background: colors.$ULTRA_LIGHT_GREY;
         @include flex.flex($ai: center, $jc: center);
         flex-direction: column;
-        @media (max-width: 1023px) {
+        @media (max-width: 1919px) {
             min-width: 0px;
         }
         .about-author__img{
             margin: 150px 0px 80px 0px;
+            img {
+                @media (min-width: 320px) and (max-width: 767px) {
+                    width: 300px;
+                    height: 200px;    
+                }
+                
+                @media (min-width: 768px) and (max-width: 1023px) {
+                    width: 550px;
+                }
+
+                @media (min-width: 1024px) and (max-width: 1439px) {
+                    width: 700px;
+                }
+                
+                @media (min-width: 1440px) and (max-width: 1919px) {
+                    width: 1200px;
+                }
+            }
+
         }
         .about-author__info {
             min-width: 1300px;
@@ -29,10 +48,21 @@
                 flex-direction: column;
                 min-width: 0px;
                 padding: 0px 20px;
-
+                .info__location-data {
+                    margin-bottom: 80px;
+                }
+            }
+            @media (min-width: 1024px) and (max-width: 1439px) {
+                min-width: 1000px;
             }
             .info__location-data {
                 background: colors.$WHITE;
+                @media (min-width: 1024px) and (max-width: 1439px) {
+                    margin-left: 10px;
+                }
+                @media (min-width: 1440px) and (max-width: 1919px) {
+                    margin-left: 50px;
+                }
                 .data-blocks {
                     @include flex.flex;
                     margin: 45px 65px;
@@ -52,14 +82,12 @@
                             font-size: 15px; 
                             line-height: 350%;
                         }
-                    }
                         p {
                             img {
-                                @media (max-width: 1023px) {
-                                    max-width: 350px;
-                                    max-height: 200px;
-                                }
                                 margin-right: 20px;
+                                @media (min-width: 320px) and (max-width: 374px) {
+                                    margin-right: 10px;
+                                }
                             }
                         }
                     }
@@ -82,6 +110,16 @@
                 button {
                     @include button.btn(primary);
                 }
+                @media (min-width: 1024px) and (max-width: 1439px) {
+                    max-width: 490px;
+                    h2 {
+                        font-size: 30px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }
+}

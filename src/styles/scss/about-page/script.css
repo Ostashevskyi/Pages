@@ -493,13 +493,34 @@ footer .footer__copyright p span {
   justify-content: center;
   flex-direction: column;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1919px) {
   .main__about-block .about-author {
     min-width: 0px;
   }
 }
 .main__about-block .about-author .about-author__img {
   margin: 150px 0px 80px 0px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main__about-block .about-author .about-author__img img {
+    width: 300px;
+    height: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__about-block .about-author .about-author__img img {
+    width: 550px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__about-block .about-author .about-author__img img {
+    width: 700px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .main__about-block .about-author .about-author__img img {
+    width: 1200px;
+  }
 }
 .main__about-block .about-author .about-author__info {
   min-width: 1300px;
@@ -514,9 +535,27 @@ footer .footer__copyright p span {
     min-width: 0px;
     padding: 0px 20px;
   }
+  .main__about-block .about-author .about-author__info .info__location-data {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__about-block .about-author .about-author__info {
+    min-width: 1000px;
+  }
 }
 .main__about-block .about-author .about-author__info .info__location-data {
   background: #FFFFFF;
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__about-block .about-author .about-author__info .info__location-data {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .main__about-block .about-author .about-author__info .info__location-data {
+    margin-left: 50px;
+  }
 }
 .main__about-block .about-author .about-author__info .info__location-data .data-blocks {
   display: flex;
@@ -555,19 +594,18 @@ footer .footer__copyright p span {
     line-height: 350%;
   }
 }
-.main__about-block .about-author .about-author__info .info__location-data .data-blocks p img {
+.main__about-block .about-author .about-author__info .info__location-data .data-blocks .data-paragraphs p img {
   margin-right: 20px;
 }
-@media (max-width: 1023px) {
-  .main__about-block .about-author .about-author__info .info__location-data .data-blocks p img {
-    max-width: 350px;
-    max-height: 200px;
+@media (min-width: 320px) and (max-width: 374px) {
+  .main__about-block .about-author .about-author__info .info__location-data .data-blocks .data-paragraphs p img {
+    margin-right: 10px;
   }
 }
-.main__about-block .about-author .info__personal-data {
+.main__about-block .about-author .about-author__info .info__personal-data {
   max-width: 600px;
 }
-.main__about-block .about-author .info__personal-data h2 {
+.main__about-block .about-author .about-author__info .info__personal-data h2 {
   font-family: "Cardo", "serif";
   font-weight: normal;
   font-size: 45px;
@@ -575,12 +613,12 @@ footer .footer__copyright p span {
   color: #1B3764;
   margin-bottom: 20px;
 }
-.main__about-block .about-author .info__personal-data .line {
+.main__about-block .about-author .about-author__info .info__personal-data .line {
   width: 55px;
   border: 1px solid #FFCA42;
   margin-bottom: 25px;
 }
-.main__about-block .about-author .info__personal-data p {
+.main__about-block .about-author .about-author__info .info__personal-data p {
   font-family: "Inter", sans-serif;
   font-weight: normal;
   font-size: 19px;
@@ -588,7 +626,7 @@ footer .footer__copyright p span {
   color: #969AA0;
   margin-bottom: 35px;
 }
-.main__about-block .about-author .info__personal-data button {
+.main__about-block .about-author .about-author__info .info__personal-data button {
   width: 220px;
   height: 65px;
   border: 1px solid #FFCA42;
@@ -601,4 +639,15 @@ footer .footer__copyright p span {
   cursor: pointer;
   background-color: #FFCA42;
   border: none;
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main__about-block .about-author .about-author__info .info__personal-data {
+    max-width: 490px;
+  }
+  .main__about-block .about-author .about-author__info .info__personal-data h2 {
+    font-size: 30px;
+  }
+  .main__about-block .about-author .about-author__info .info__personal-data p {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=script.css.map */
