@@ -1,0 +1,94 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+@use '../components/button';
+@use '../components/line';
+@use '../utilities/center';
+
+.author-story {
+    @media (min-width: 1024px) and (max-width: 1439px) {
+        padding: 0px 30px;
+    }
+    margin-bottom: 150px;
+    .story {
+        @include flex.flex;
+        @media (max-width: 1023px) {
+            flex-direction: column;
+            padding: 0px 30px;
+        }
+        .story__info {
+            h2 {
+                @include text.heading($color: colors.$BLUE, $fs: 45px, $lh: 150%);
+                margin-bottom: 20px;
+                @media (max-width: 1023px) {
+                    text-align: center;
+                }
+            }
+            .line {
+                @include line.line;
+                margin-bottom: 35px;
+                @media (max-width: 1023px) {
+                    margin: 0 auto 35px auto;
+                }
+            }
+            p {
+                @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 180%);
+                margin-bottom: 20px;
+            }          
+            .rewards {
+                .rewards__block {
+                    @include flex.flex();
+                    &:nth-child(-n+2){
+                        .rewards__number {
+                            &::before {
+                                content: '';
+                                position:absolute;
+                                width: 100%;
+                                height: 100%;
+                                border-color: transparent transparent transparent #000;
+                                border-style: dashed;
+                                border-width:2px;
+                                transform: translate(50%, 95%);
+                                @media (min-width: 1024px) and (max-width: 1439px) {
+                                    height: 175%;
+                                    transform: translate(50%, 55%);
+                                }
+                            }
+                        }
+
+                        }
+                    .rewards__number {
+                        position: relative;                            
+                        min-width: 65px;
+                        min-height: 65px;
+                        background: colors.$YELLOW;
+                        margin-right: 40px;
+                       
+                        p {
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            @include text.heading($color: colors.$BLUE, $fs: 30px);
+                        }                                                
+                    }
+                    .rewards__info {
+                        h3 {
+                            @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 100%);
+                            margin-bottom: 10px;
+                        }
+                     
+                    }
+                }
+            }
+        }
+        .story__img {
+            margin-left: 100px;
+            img {
+                @media (min-width: 1024px) and (max-width: 1439px) {
+                    width: 500px;
+                }
+            }
+        }
+    }
+}

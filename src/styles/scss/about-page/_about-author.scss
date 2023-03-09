@@ -10,92 +10,72 @@
     @include flex.flex($ai: flex-end);
     flex-direction: column;
     .about-author {
-        min-width: 1820px;
+        min-width: 95%;
         margin: 160px 0px 0px 0px;
         background: colors.$ULTRA_LIGHT_GREY;
         @include flex.flex($ai: center, $jc: center);
         flex-direction: column;
         @media (max-width: 1919px) {
+            margin: 160px 0px 30px 0px;
+        }
+        @media (max-width: 1439px) {
             min-width: 0px;
+            max-width: 95%;
         }
         .about-author__img{
             margin: 150px 0px 80px 0px;
             img {
-                @media (min-width: 320px) and (max-width: 767px) {
-                    width: 300px;
-                    height: 200px;    
-                }
-                
-                @media (min-width: 768px) and (max-width: 1023px) {
-                    width: 550px;
-                }
-
-                @media (min-width: 1024px) and (max-width: 1439px) {
-                    width: 700px;
-                }
-                
-                @media (min-width: 1440px) and (max-width: 1919px) {
-                    width: 1200px;
-                }
+                width: 80%;
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
             }
-
         }
         .about-author__info {
-            min-width: 1300px;
+            min-width: 75%;
             margin-bottom: 140px;
             @include flex.flex($ai: center, $jc: space-between);
             @media (max-width: 1023px) {
                 flex-direction: column;
                 min-width: 0px;
                 padding: 0px 20px;
+                margin-bottom: 20px;
                 .info__location-data {
-                    margin-bottom: 80px;
+                    margin-bottom: 40px;
                 }
             }
-            @media (min-width: 1024px) and (max-width: 1439px) {
-                min-width: 1000px;
-            }
-            .info__location-data {
-                background: colors.$WHITE;
-                @media (min-width: 1024px) and (max-width: 1439px) {
-                    margin-left: 10px;
+            .about-author__block {
+                background: #fff;
+                width: 400px;
+                height: 350px;
+                @include flex.flex($jc: center, $ai: normal);
+                flex-direction: column;
+                margin: 0px 30px 0px 0px;
+                padding: 0px 30px;
+                @media (max-width: 1023px) {
+                    margin-bottom: 50px;
                 }
-                @media (min-width: 1440px) and (max-width: 1919px) {
-                    margin-left: 50px;
-                }
-                .data-blocks {
-                    @include flex.flex;
-                    margin: 45px 65px;
-                    @media (max-width: 424px) {
-                        margin: 45px 25px;
-                    }
-                    @media (min-width: 425px) and (max-width: 1023px) {
-                        margin: 45px 65px;
-                    }
-                    .data-headings {
-                        margin-right: 20px;
-                        @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 52px);
-                        @media (max-width: 1023px) {
-                            font-size: 15px;                       
-                        }
-                    }
-                    .data-paragraphs {
-                        @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 275%);
-                        @media (max-width: 1023px) {
-                            font-size: 15px; 
-                            line-height: 350%;
-                        }
+                .block__data {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .data__headings {
                         p {
+                            @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 52px);
+                        }
+                    }
+                    .data__parapgraph {
+                        p {
+                            @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 275%);
                             img {
-                                margin-right: 20px;
-                                @media (min-width: 320px) and (max-width: 374px) {
-                                    margin-right: 10px;
-                                }
+                                margin-left: 30px;                                
                             }
                         }
                     }
                 }
+                
             }
+        }
             .info__personal-data {
                 max-width: 600px;
                 h2 {
@@ -122,7 +102,9 @@
                         font-size: 16px;
                     }
                 }
+                @media (max-width: 1023px) {
+                    padding: 0px 30px;
+                }
             }
         }
-    }
 }
