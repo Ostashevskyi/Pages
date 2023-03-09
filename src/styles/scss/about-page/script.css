@@ -563,9 +563,14 @@ footer .footer__copyright p span {
   justify-content: flex-start;
   margin: 45px 65px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 424px) {
   .main__about-block .about-author .about-author__info .info__location-data .data-blocks {
     margin: 45px 25px;
+  }
+}
+@media (min-width: 425px) and (max-width: 1023px) {
+  .main__about-block .about-author .about-author__info .info__location-data .data-blocks {
+    margin: 45px 65px;
   }
 }
 .main__about-block .about-author .about-author__info .info__location-data .data-blocks .data-headings {
