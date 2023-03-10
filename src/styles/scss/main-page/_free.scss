@@ -16,7 +16,7 @@
             .block_info {
                 padding: 120px 230px;
                 @media (max-width: 1023px) {
-                    padding: 120px 0px;
+                    padding: 120px 15px;
                 }
                 h2 {
                     @include text.heading($color: colors.$BLUE, $fs: 45px, $lh: 120%);
@@ -33,6 +33,10 @@
                     max-width: 660px;
                     margin: 0 auto 40px auto;
                     text-align: center;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        padding: 0px 15px;
+                    }
+
                 }
                 div {
                     @media (max-width: 1023px) {
@@ -52,6 +56,9 @@
                         padding-left: 25px;
                         color: colors.$GREY;
                         margin-right: 10px;
+                        @media (min-width: 320px) and (max-width: 767px) {
+                            width: 280px;
+                        }
                     }
                     .submit_input {
                         @include button.btn();

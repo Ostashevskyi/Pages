@@ -18,7 +18,11 @@
             h2 {
                 text-align: center;
                 margin: 130px 0px 20px 0px;
-                @include text.heading($color: colors.$BLUE, $fs: 45px)
+                @include text.heading($color: colors.$BLUE, $fs: 45px);
+                @media (min-width: 320px) and (max-width: 767px) {
+                    font-size: 40px;
+                }
+
             }
             .line {
                 @include line.line;
@@ -28,6 +32,9 @@
     }
     .trusted__companies {
         @include flex.flex($ai: center, $jc: space-between);
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding: 0px 15px;
+        }
         .trusted__company_block {
             @include flex.flex($ai: center);
             flex-direction: column;

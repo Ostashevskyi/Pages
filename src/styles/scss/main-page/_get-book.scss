@@ -15,18 +15,31 @@
             padding: 0px 30px;
         }
         .get__book_info {
+            margin: 120px 125px 120px 0px;
+            max-width: 600px;
+            
+            @media (min-width: 320px) and (max-width: 767px) {
+                padding: 0px 15px;
+            }
+            
             @media (max-width: 1023px) {
                 margin: 120px 0px;
             }
-            margin: 120px 125px 120px 0px;
-            max-width: 600px;
             h2 {
                 @include text.heading($fs: 45px, $fw: 700);
                 margin-bottom: 20px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    font-size: 35px;
+                    text-align: center;
+                }
+
             }
             .line {
                 @include line.line;
                 margin-bottom: 20px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    margin: 0px auto 20px auto;
+                }
             }
             p {
                 @include text.paragraph($color: colors.$LIGHT_GREY);
@@ -46,6 +59,11 @@
             flex-direction: column;
             .get__book_img {
                 margin: 20px 0px 60px 0px;
+                img {
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        width: 300px;
+                    }
+                }
             }
         }
     }

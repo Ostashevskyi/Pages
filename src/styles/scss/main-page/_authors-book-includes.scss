@@ -14,6 +14,10 @@
         h3 {
             margin: 145px 0px 20px 0px;
             @include text.heading($color: colors.$BLUE, $fs: 45px);
+            @media (min-width: 320px) and (max-width: 767px) {
+                text-align: center;
+                font-size: 40px;
+            }
             
         }
         .line {
@@ -25,29 +29,46 @@
             @include flex.flex($ai: center, $jc: space-between);
             @media (max-width: 1023px) {
                 flex-direction: column;
-                padding: 0px 15px;
             }
-            @media (min-width: 1024px) and (max-width: 1439px) {
-                margin-left: 30px;
-            }
+            // @media (min-width: 1024px) and (max-width: 1439px) {
+            //     margin-left: 30px;
+            // }
             .book_includes__books_book {
-                @media (min-width: 1024px) and (max-width: 1439px) {
-                    align-items: normal;
-                }
                 margin: 0px 50px 50px 0px;
+                @media (min-width: 320px) and (max-width: 1023px) {
+                    flex-direction: column;
+                    margin: 0px 0px 50px 0px;
+                }
+              
+                
                 @include flex.flex($ai: center);
                 .book__img {
                     img {
+                        @media (min-width: 320px) and (max-width: 1023px) {
+                            margin-bottom: 40px;
+                        }
                         @media (min-width: 1024px) and (max-width: 1439px) {
                             width: 200px; 
                             height: 300px;  
+                            padding-left: 15px;
                         }
                         width: 300px;
                         height: 400px;
                     }
                 }
                 .book__info {
-                    margin-left: 40px;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        margin-left: 0px;
+                        padding: 0px 15px;
+                    }
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        text-align: center;
+                        max-width: 50%;
+                    }
+                    @media (min-width: 1024px) {
+                        margin-left: 40px;
+                    }
+
                     h4 {
                         @media (min-width: 1024px) and (max-width: 1439px) {
                             font-size: 28px;
@@ -57,13 +78,15 @@
                     }
                     p {
                         @include text.paragraph($color: colors.$GREY, $lh: 150%);
-                        letter-spacing: -1px;
                         margin-bottom: 30px;
                     }
                     @include list.ul-list($color: colors.$BLUE, $spanColor: colors.$GREY);
                     ul {
                         @include flex.flex($ai: center, $jc: space-between);
                         margin-bottom: 30px;
+                        @media (min-width: 320px) and (max-width: 1023px) {
+                            justify-content: space-around;
+                        }
                         li {
                             &:first-child {
                                 margin-left: 20px;

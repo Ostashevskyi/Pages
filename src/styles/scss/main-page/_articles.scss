@@ -17,6 +17,9 @@
                 text-align: center;
                 @include text.heading($color: colors.$BLUE, $fs: 45px);
                 margin-bottom: 20px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    padding: 0px 15px;
+                }
             }
             .line {
                 margin: 0 auto;

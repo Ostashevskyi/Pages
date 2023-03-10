@@ -17,7 +17,6 @@
                     }
                 }
                 .header__burger-btn {
-                    position: fixed;
                     span {
                         &:nth-child(1) {
                             transform: translateY(0) rotate(45deg);
@@ -96,7 +95,7 @@
         @media screen and (max-width: 1023px) {
             display: flex;
             flex-direction: column;
-            position: fixed;
+            position: absolute;
             transform: translateY(-200%);
             top: 0;
             padding: 50px 20px 20px 20px;

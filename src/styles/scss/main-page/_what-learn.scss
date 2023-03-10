@@ -18,6 +18,10 @@
             h2 {
                 margin: 145px 0px 20px 0px;
                 @include text.heading($color: colors.$BLUE, $fs: 45px);
+                @media (min-width: 320px) and (max-width: 767px) {
+                    font-size: 40px;
+                    text-align: center;
+                }
             }
             .line {
                 @include line.line;
@@ -28,6 +32,13 @@
             @include flex.flex;
             @include learn-card.cards;
             padding-bottom: 140px;
+            .learn__img {
+                img {
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        width: 300px;
+                    }
+                }
+            }
 
             @media (max-width: 1023px) {
                 flex-direction: column;
@@ -37,6 +48,7 @@
                 flex-direction: column;
                 .learn__img {
                     margin: 0 auto;
+                    
                 }
             }
         }

@@ -43,6 +43,9 @@ footer {
             @include flex.flex($jc: space-between);
             width: 100%;
             .footer__list {
+                @media (min-width: 320px) and (max-width: 767px) {
+                    margin-bottom: 50px;
+                }
                 h3 {
                     @include text.heading($color: colors.$WHITE, $fs: 24px, $lh: 170%);
                     margin-bottom: 20px;
@@ -77,13 +80,38 @@ footer {
                     }
                 }
             }
-            @media (max-width: 1023px) {
+
+            @media (min-width: 320px) and (max-width: 424px) {
                 padding: 0px 50px;
                 flex-wrap: wrap;
+                text-align: center;
+                justify-content: center;
                 .footer__touch {
-                    margin-top: 50px;
+                    text-align: center;
+                }             
+            }
+
+            @media (min-width: 425px) and (max-width: 767px) {
+                padding: 0px 50px;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: space-between;
+                .footer__touch {
+                    text-align: center;
                 }
             }
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+                padding: 0px 50px;
+                flex-wrap: wrap;
+                text-align: center;
+                justify-content: space-around;
+                .footer__touch {
+                    margin-top: 50px;
+                    text-align: center;
+                }
+            }
+
             @media (min-width: 1024px) and (max-width: 1439px) {
                 padding: 0px 110px;
                 flex-wrap: wrap;

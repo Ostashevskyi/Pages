@@ -12,11 +12,18 @@
     margin-bottom: 150px;
     .story {
         @include flex.flex;
+        @media (min-width: 320px) and (max-width: 767px) {
+            align-items: center;
+            padding: 0px;
+        }
         @media (max-width: 1023px) {
             flex-direction: column;
-            padding: 0px 30px;
         }
+        
         .story__info {
+            @media (min-width: 320px) and (max-width: 1023px) {
+                padding: 0px 15px;
+            }
             h2 {
                 @include text.heading($color: colors.$BLUE, $fs: 45px, $lh: 150%);
                 margin-bottom: 20px;
@@ -49,6 +56,21 @@
                                 border-style: dashed;
                                 border-width:2px;
                                 transform: translate(50%, 95%);
+                                @media (min-width: 320px) and (max-width: 374px) {
+                                    height: 300%;
+                                    transform: translate(50%, 35%);
+                                }
+                                
+                                @media (min-width: 375px) and (max-width: 424px) {
+                                    height: 250%;
+                                    transform: translate(50%, 40%);
+                                }
+
+                                @media (min-width: 425px) and (max-width: 570px) {
+                                    height: 200%;
+                                    transform: translate(50%, 50%);
+                                }
+
                                 @media (min-width: 1024px) and (max-width: 1439px) {
                                     height: 175%;
                                     transform: translate(50%, 55%);
@@ -84,8 +106,14 @@
         }
         .story__img {
             margin-left: 100px;
-            img {
-                @media (min-width: 1024px) and (max-width: 1439px) {
+            @media (min-width: 320px) and (max-width: 767px) {
+                margin-left: 0px;
+                img {
+                    width: 300px;
+                }
+            }
+            @media (min-width: 1024px) and (max-width: 1439px) {
+                img {
                     width: 500px;
                 }
             }

@@ -12,11 +12,14 @@
     background: colors.$WHITE;
     .readers-about__content {
         padding: 140px 0px;
+
         @include flex.flex($ai: center);
 
-        @media (max-width: 1023px) {
+        @media (min-width: 320px) and (max-width: 1023px) {
             flex-direction: column;
+            padding: 140px 15px
         }
+        
         @media (min-width: 1024px) and (max-width: 1439px) {
             flex-direction: column;
         }
@@ -24,14 +27,23 @@
         .readers-about__text {
             max-width: 420px;
             margin-right: 120px;
+            @media (min-width: 320px) and (max-width: 767px) {
+                margin-right: 0px;
+            }
             h2 {
-                max-width: 320px;
                 @include text.heading($color: colors.$BLUE, $fs: 45px);
                 margin-bottom: 25px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    font-size: 40px;
+                    text-align: center;
+                }
             }
             .line {
                 @include line.line;
                 margin-bottom: 30px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    margin: 0 auto;
+                }
             }
             p {
                 @include text.paragraph($color: colors.$GREY, $fs: 19px);

@@ -4,8 +4,14 @@
 
 .readers-about__card {
     flex-direction: column;
-    width: 370px;
-    height: 310px;
+    max-width: 370px;
+    @media (min-width: 320px) and (max-width: 767px) {
+        max-width: 90%;
+    }
+    @media (min-width: 1024px){
+        max-width: 0px;
+        min-width: 370px;
+    }
     background: colors.$BLUE;
     &:last-child {
         @media (max-width: 1023px) {
@@ -23,13 +29,10 @@
             
         position: absolute;
         top: 50%;
-        left: 110%;
+        left: 105%;
         transform: translateY(-50%);
     }
     &:first-child {
-        @media (max-width: 1023px) {
-            margin-right: 10px;
-        }
         @media (min-width: 1024px) and (max-width: 1439px) {
             margin: 0px 20px 0px 0px;
             

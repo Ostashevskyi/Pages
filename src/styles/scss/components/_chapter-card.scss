@@ -4,10 +4,12 @@
 @use '../utilities/list';
 
 .chapter__content-card {
-    width: 630px;
-    height: 250px;
+    max-width: 630px;
     background: colors.$WHITE;
     padding: 50px;
+    @media (min-width: 320px) and (max-width: 767px) {
+        width: 90%;
+    }
     
     &:nth-child(odd) {
         margin-right: 40px;
@@ -20,7 +22,7 @@
 
     margin-bottom: 40px;
     h3 {
-        @include text.heading($color: colors.$BLUE, $fs: 24px);
+        @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 150%);
         margin-bottom: 15px;
     }
     p {
@@ -30,9 +32,15 @@
     ul {
         margin: 20px 0px 0px 20px;
         @include flex.flex($jc: space-between);
+        @media (min-width: 320px) and (max-width: 767px) {
+            flex-direction: column;
+            li {
+                margin-bottom: 20px;
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
     }
     @include list.ul-list($color: colors.$BLUE, $spanColor: colors.$GREY);
-
-  
-    
 }

@@ -21,8 +21,3 @@ body {
     background: colors.$BLUE;
 }
 
-.wrapper {
-    @media (max-width: 768px) {
-        position: absolute;
-    }
-}
