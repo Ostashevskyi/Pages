@@ -213,12 +213,12 @@ header .header__sides {
 header .header__sides .header__left-side {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 header .header__sides .header__left-side .header__logo {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 header .header__sides .header__left-side .header__logo .logo__title {
   font-family: "Inter", sans-serif;
@@ -230,8 +230,8 @@ header .header__sides .header__left-side .header__logo .logo__title {
 }
 header .header__sides .header__left-side .header__socialmedia {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
 }
 header .header__sides .header__left-side .header__socialmedia .icons {
   display: flex;
@@ -248,12 +248,12 @@ header .header__sides .header__left-side .header__socialmedia .icons {
 header .header__sides .header__right-side nav {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 header .header__sides .header__right-side nav .header__list ul {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
 }
 header .header__sides .header__right-side nav .header__list ul li {
   margin-right: 20px;
@@ -306,7 +306,7 @@ main .main__welcome_part {
   margin-bottom: 115px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 @media (max-width: 1023px) {
   main .main__welcome_part {
@@ -384,8 +384,8 @@ main .main__welcome_part .welcome_part__info .welcome__info_order a span {
 @media (max-width: 1023px) {
   main .main__welcome_part .welcome_part__info .welcome__info_order {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: normal;
+    justify-content: normal;
     flex-direction: column;
     margin-bottom: 30px;
   }
@@ -394,9 +394,9 @@ main .main__welcome_part .welcome_part__info .welcome__info_order a span {
   }
 }
 main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
-  font-family: "Inter", sans-serif;
+  font-family: "Cardo", "serif";
   font-weight: 700;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 155%;
   color: #FFFFFF;
   list-style-type: disc;
@@ -425,8 +425,8 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 @media (min-width: 320px) and (max-width: 580px) {
   main .main__welcome_part .welcome_part__info .welcome__info_list ul {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: normal;
+    justify-content: normal;
     flex-direction: column;
   }
   main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
@@ -505,7 +505,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   margin: 0px 50px 50px 0px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book {
@@ -568,9 +568,9 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   margin-bottom: 30px;
 }
 .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book .book__info ul li {
-  font-family: "Inter", sans-serif;
+  font-family: "Cardo", "serif";
   font-weight: 700;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 155%;
   color: #1B3764;
   list-style-type: disc;
@@ -732,7 +732,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   background: #1B3764;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
   padding: 15px;
   max-width: 480px;
 }
@@ -775,8 +775,8 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 .main__trusted_section {
   background: #fff;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   .main__trusted_section .trusted__content {
@@ -815,7 +815,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 .main__trusted_section .trusted__companies .trusted__company_block {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
   flex-direction: column;
   text-align: center;
   max-width: 325px;
@@ -860,7 +860,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 .main__get_book .get__book_content {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   .main__get_book .get__book_content {
@@ -973,14 +973,14 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 }
 .what-learn .learn__content .learn__content-info {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
   padding-bottom: 140px;
 }
 .what-learn .learn__content .learn__content-info .learn__cards {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
   flex-wrap: wrap;
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -991,8 +991,8 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 .what-learn .learn__content .learn__content-info .learn__cards .learn__card {
   max-width: 300px;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
   flex-direction: column;
   padding: 40px 35px;
   background: #F4F8FF;
@@ -1101,7 +1101,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 .chapter__content-card ul {
   margin: 20px 0px 0px 20px;
   display: flex;
-  align-items: flex-start;
+  align-items: normal;
   justify-content: space-between;
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1116,9 +1116,9 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   }
 }
 .chapter__content-card ul li {
-  font-family: "Inter", sans-serif;
+  font-family: "Cardo", "serif";
   font-weight: 700;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 155%;
   color: #1B3764;
   list-style-type: disc;
@@ -1134,8 +1134,8 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 
 .main__chapter {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
   background: #F4F8FF;
 }
 .main__chapter .chapter__content {
@@ -1168,8 +1168,8 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 }
 .main__chapter .chapter__content .chapter__content-info .chapter__content-cards {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
   flex-wrap: wrap;
   margin-bottom: 80px;
 }
@@ -1283,7 +1283,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 .readers-about__card .card__user-data .card__user-info .user-info__img img {
   margin-right: 20px;
@@ -1320,7 +1320,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
   padding: 140px 0px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .main__readers-about .readers-about__content {
@@ -1384,7 +1384,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 .main__readers-about .readers-about__content .readers-about__text .text__rating {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 .main__readers-about .readers-about__content .readers-about__text .text__rating span {
   font-family: "Cardo", "serif";
@@ -1580,7 +1580,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 .main__free .main__free_content .main__free_block .block_info div {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
 }
 @media (max-width: 1023px) {
   .main__free .main__free_content .main__free_block .block_info div {
@@ -1624,7 +1624,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 
 footer .footer__content .footer__info {
   display: flex;
-  align-items: flex-start;
+  align-items: normal;
   justify-content: space-between;
   padding: 85px 0px 70px 0px;
   border-bottom: 1px solid #969AA0;
@@ -1635,7 +1635,7 @@ footer .footer__content .footer__info .info__data {
 footer .footer__content .footer__info .info__data .info__logo {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: normal;
   margin-bottom: 25px;
 }
 footer .footer__content .footer__info .info__data .info__logo .logo__title a {
@@ -1648,11 +1648,11 @@ footer .footer__content .footer__info .info__data .info__logo .logo__title a {
 }
 footer .footer__content .footer__info .info__data .footer__socialmedia {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: normal;
+  justify-content: normal;
 }
 footer .footer__content .footer__info .info__data .footer__socialmedia .icons {
   display: flex;
@@ -1678,7 +1678,7 @@ footer .footer__content .footer__info .info__data .footer__socialmedia .icons {
 }
 footer .footer__content .footer__lists {
   display: flex;
-  align-items: flex-start;
+  align-items: normal;
   justify-content: space-between;
   width: 100%;
 }

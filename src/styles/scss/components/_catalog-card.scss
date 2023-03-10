@@ -1,0 +1,72 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+@use '../components/button';
+@use '../utilities/list';
+
+@mixin catalog__card($type) {
+    @include flex.flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-bottom: 70px;
+    @media (min-width: 768px) and (max-width: 1023px) {
+        max-width: 350px;
+    }
+    .card__img {
+        background: colors.$MEDIUM_GREY;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &::before {
+            content: "";
+            background-size: 80px 80px;
+            position: absolute;
+            right: 15%;
+            bottom: 5%;
+            width: 80px;
+            height: 80px;
+            @if ($type == audio) {
+                background-image: url(../../../images/icons/audio.svg);
+            } 
+            @if ($type == mockup) {
+                background-image: url(../../../images/icons/mockup.svg);
+            }
+
+        }
+        img {
+            max-width: 70%;
+            max-height: 80%;
+        }
+        margin-bottom: 20px;
+    }
+    .card__info {
+        .card__title {
+            @include flex.flex($ai: center, $jc: space-between);
+            margin-bottom: 10px;
+            h2 {
+                @include text.heading($color: colors.$BLUE, $fs: 32px, $lh: 120%);
+            }
+            p {
+                @include text.paragraph($color: colors.$YELLOW, $fs: 22px, $lh: 180%, $fw: 700);
+                
+            }
+        }
+        p {
+            @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 150%);
+            margin-bottom: 10px;
+        }
+        @include list.ul-list($color: colors.$BLUE, $spanColor: colors.$WHITE);
+        ul {
+            margin: 0px 0px 10px 20px;
+            li {
+                font-size: 24px;
+            }
+        }
+        button {
+            @include button.btn(secondary);
+        }
+    }
+
+
+}

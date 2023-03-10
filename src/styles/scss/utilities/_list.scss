@@ -4,7 +4,7 @@
 @mixin ul-list($color, $spanColor) {
     ul {
         li {
-            @include text.paragraph($lh: 155%, $color: $color, $fw: 700);
+            @include text.heading($lh: 155%, $color: $color, $fw: 700);
             list-style-type: disc;
             &::marker {
                 color: colors.$YELLOW;

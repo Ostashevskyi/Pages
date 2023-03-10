@@ -1,0 +1,33 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+@use '../utilities/center';
+@use '../components/button';
+@use '../components/catalog-card';
+
+
+.store__catalog {
+    background: colors.$WHITE;
+    .store__content {
+        padding-top: 150px;
+        @include flex.flex($jc: space-between);
+        flex-wrap: wrap;
+        @media (min-width: 320px) and (max-width: 1023px) {
+            padding: 150px 15px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+            justify-content: space-around;
+        }
+        .catalog__card {
+            &:nth-child(3n + 1) {
+                @include catalog-card.catalog__card($type: none);
+            }
+            &:nth-child(3n + 2) {
+                @include catalog-card.catalog__card($type: audio);
+            }
+            &:nth-child(3n + 3) {
+                @include catalog-card.catalog__card($type: mockup);
+            }
+        }
+    }
+}
