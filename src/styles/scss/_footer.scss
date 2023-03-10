@@ -56,12 +56,6 @@ footer {
                         a {
                             @include text.paragraph($color: colors.$LIGHT_BLUE, $fs: 18px, $lh: 205%);
                         }
-                        &::before {
-                            content: url('../../images/icons/marker.svg');
-                            position: relative;
-                            top: -2px;
-                            left: -10px;
-                        }
                     }
                 }
             }

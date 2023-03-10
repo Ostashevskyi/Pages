@@ -1705,12 +1705,6 @@ footer .footer__content .footer__lists .footer__list ul li a {
   line-height: 205%;
   color: #B4C7E7;
 }
-footer .footer__content .footer__lists .footer__list ul li::before {
-  content: url("../../images/icons/marker.svg");
-  position: relative;
-  top: -2px;
-  left: -10px;
-}
 footer .footer__content .footer__lists .footer__touch h3 {
   font-family: "Cardo", "serif";
   font-weight: normal;
