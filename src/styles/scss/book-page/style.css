@@ -697,4 +697,57 @@ footer .footer__copyright p span {
   font-size: 19px;
   line-height: 180%;
   color: #969AA0;
+}
+
+.main__book-ad {
+  background: #FFCA42;
+}
+.main__book-ad .book-ad__content {
+  padding: 85px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 1439px) {
+  .main__book-ad .book-ad__content {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.main__book-ad .book-ad__content .book-ad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 365px;
+}
+@media (min-width: 320px) and (max-width: 1439px) {
+  .main__book-ad .book-ad__content .book-ad {
+    margin-bottom: 50px;
+  }
+}
+.main__book-ad .book-ad__content .book-ad .book-ad__img {
+  width: 80px;
+  height: 80px;
+  background: #1B3764;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.main__book-ad .book-ad__content .book-ad .book-ad__info h3 {
+  font-family: "Cardo", "serif";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #1B3764;
+  margin-bottom: 10px;
+}
+.main__book-ad .book-ad__content .book-ad .book-ad__info p {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 180%;
+  color: #1B3764;
 }/*# sourceMappingURL=style.css.map */
