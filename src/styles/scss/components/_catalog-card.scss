@@ -65,6 +65,9 @@
         }
         button {
             @include button.btn(secondary);
+            a {
+                color: colors.$BLUE;
+            }
         }
     }
 
