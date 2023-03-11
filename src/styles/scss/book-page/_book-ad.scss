@@ -1,0 +1,43 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+@use '../components/button';
+@use '../components/line';
+@use '../utilities/center';
+
+.main__book-ad {
+    background: colors.$YELLOW;
+    .book-ad__content {
+        padding: 85px 0px;
+        @include flex.flex($ai: center, $jc: space-between);
+        @media (min-width: 320px) and (max-width: 1439px) {
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .book-ad {
+            @include flex.flex($ai: center, $jc: center);
+            flex-direction: column;
+            text-align: center;
+            max-width: 365px;
+            @media (min-width: 320px) and (max-width: 1439px) {
+                margin-bottom: 50px;
+            }
+            .book-ad__img {
+                width: 80px;
+                height: 80px;
+                background: colors.$BLUE;
+                @include flex.flex(center, center);
+                margin-bottom: 20px;
+            }
+            .book-ad__info {
+                h3 {
+                    @include text.heading($color: colors.$BLUE, $fs: 32px, $lh: 120%, $fw: 700);
+                    margin-bottom: 10px;
+                }
+                p {
+                    @include text.paragraph($color: colors.$BLUE, $fs: 19px, $lh: 180%);
+                }
+            }
+        }
+    }
+}

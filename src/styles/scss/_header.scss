@@ -63,7 +63,7 @@ header {
                 @include flex.flex(center);
                 .header__list {
                     ul {
-                        @include flex.flex;
+                        @include flex.flex($ai: center);
                         li {
                             margin-right: 20px;
                             @include text.paragraph;

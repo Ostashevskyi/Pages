@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="./src/styles/scss/book-page/style.css">
+    <script>
+        function toogleBurger() {
+            document.querySelector('.header__wrapper').classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header__wrapper content">
+            <button class="header__burger-btn" onclick="toogleBurger()">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="header__sides">
+                <div class="header__left-side">
+                    <div class="header__logo">
+                        <div class="logo__image">
+                            <a href="index.html">
+                                <img src="./src/images/icons/logo.svg" alt="logo">
+                            </a>
+                        </div>
+                        <div class="logo__title">
+                            <p>Pages</p>
+                        </div>
+                    </div>
+                    <div class="header__socialmedia">
+                        <div class="header__icons icons">
+                            <a href="#">
+                                <img src="./src/images/icons/fb-blue.svg" alt="facebook-icon">
+                            </a>
+                        </div>
+                        <div class="header__icons icons">
+                            <a href="#">
+                                <img src="./src/images/icons/twitter-blue.svg" alt="twitter-icon">
+                            </a>
+                        </div>
+                        <div class="header__icons icons">
+                            <a href="#">
+                                <img src="./src/images/icons/ln-blue.svg" alt="linkedin-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__right-side">
+                    <nav>
+                        <div class="header__list">
+                            <ul class="menu_box">
+                                <li class="menu_item"><a href="./index.html">Home</a></li>
+                                <li class="menu_item"><a href="./store.html">Store</a></li>
+                                <li class="menu_item"><a href="./about.html">About</a></li>
+                                <li class="menu_item"><a href="#">Services</a></li>
+                                <li class="menu_item"><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="header__shopcart">
+                            <a href="#">
+                                <img src="./src/images/icons/shop-cart.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="header__btn">
+                            <a href="./store.html">
+                                <button>Order Today</button>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="main__main-title">
+                <div class="main-title__content content">
+                    <div class="main-title__title">
+                        <h1>My store</h1>
+                        <div class="line"></div>
+                        <p>There are many variations of passages of Lorem Ipsum available,  have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main__book-block">
+                <div class="book__content content">
+                    <div class="book__desc">
+                        <div class="book__img">
+                            <img src="./src/images/the-dark-light.png" alt="the-dark-light-book">
+                        </div>
+                        <div class="book__data">
+                            <div class="book__title">
+                                <h3>The Dark Light</h3>
+                                <p>$30.<span>00 USD</span></p>
+                            </div>
+                            <div class="book__info">
+                                <p>Making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum.</p>
+                                <div class="info__text">
+                                    <p>Publisher:</p>
+                                    <p>Learning Private Limited (1 January 2021)</p>
+                                </div>
+                                <div class="info__text">
+                                    <p>Language:</p>
+                                    <p>English</p>
+                                </div>
+                                <div class="info__text">
+                                    <p>Paperback:</p>
+                                    <p>212 pages</p>
+                                </div>
+                                <div class="info__text">
+                                    <p>ISBN-10:</p>
+                                    <p>9788120345799</p>
+                                </div>
+                                <div class="info__text">
+                                    <p>Dimensions:</p>
+                                    <p>20 x 14 x 4 cm</p>
+                                </div>
+                            </div>
+                            <div class="book__btn">
+                                <div><p>1</p></div>
+                                <a href="#">
+                                    <button>
+                                        <img src="./src/images/icons/shop-cart.svg" alt="">
+                                        Add to Cart
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book__text">
+                        <div class="book__btns">
+                            <button>PRODUCT DESCRIPTION</button>
+                            <button>ADDITIONAL INFO</button>
+                        </div>
+                        <div class="book__questions">
+                            <div class="book__question">
+                                <h3>Do you offer discounts for education?</h3>
+                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, bypassed injected humour, or randomised words which don't look even slightly believable.</p>
+                            </div>
+                            <div class="book__question">
+                                <h3>Is this book for me?</h3>
+                                <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__book-ad">
+                <div class="book-ad__content content">
+                    <div class="book-ad">
+                        <div class="book-ad__img">
+                            <img src="./src/images/icons/guard.svg" alt="guard">
+                        </div>
+                        <div class="book-ad__info">
+                            <h3>Secure Payments</h3>
+                            <p>There are many variations of passages of alteration in some form.</p>
+                        </div>
+                    </div>
+                    <div class="book-ad">
+                        <div class="book-ad__img">
+                            <img src="./src/images/icons/box.svg" alt="box">
+                        </div>
+                        <div class="book-ad__info">
+                            <h3>Free Shipping</h3>
+                            <p>There are many variations of passages of alteration in some form.</p>
+                        </div>
+                    </div>
+                    <div class="book-ad">
+                        <div class="book-ad__img">
+                            <img src="./src/images/icons/lightning.svg" alt="lightning">
+                        </div>
+                        <div class="book-ad__info">
+                            <h3>100% Satisfactions</h3>
+                            <p>There are many variations of passages of alteration in some form.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer__content content">
+                <div class="footer__info">
+                    <div class="info__data">
+                        <div class="info__logo">
+                            <div class="logo__image">
+                                <img src="./src/images/icons/logo.svg" alt="logo">
+                            </div>
+                            <div class="logo__title">
+                                <p>
+                                    <a href="index.html">Pages</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__socialmedia">
+                            <div class="footer__icons icons">
+                                <a href="#">
+                                    <img src="./src/images/icons/fb-white.svg" alt="facebook-icon">
+                                </a>
+                            </div>
+                            <div class="footer__icons icons">
+                                <a href="#">
+                                    <img src="./src/images/icons/twitter-white.svg" alt="twitter-icon">
+                                </a>
+                            </div>
+                            <div class="footer__icons icons">
+                                <a href="#">
+                                    <img src="./src/images/icons/ln-white.svg" alt="linkedin-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__lists">
+                        <div class="footer__explore footer__list">
+                            <h3>Explore</h3>
+                            <ul>
+                                <li>
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="./store.html">Store</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__utility footer__list">
+                            <h3>Utility Pages</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">404 not found</a>
+                                </li>
+                                <li>
+                                    <a href="#">Password protected</a>
+                                </li>
+                                <li>
+                                    <a href="#">Licenses</a>
+                                </li>
+                                <li>
+                                    <a href="#">Changelog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__touch">
+                            <h3>Keep in Touch</h3>
+                            <ul>
+                                <li>Adress : <span>24A Kingston St, Los Vegas NC 28202, USA.</span></li>
+                                <li>Mail : <span>support@doctors.com</span></li>
+                                <li>Phone : <span>(+22) 123 - 4567 - 900</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>© Drafted by <span>Ostashevskyi</span> - Powered by <span>Ostashevskyi</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
