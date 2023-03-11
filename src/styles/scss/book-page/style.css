@@ -244,12 +244,12 @@ header .header__sides {
 header .header__sides .header__left-side {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
 }
 header .header__sides .header__left-side .header__logo {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
 }
 header .header__sides .header__left-side .header__logo .logo__title {
   font-family: "Inter", sans-serif;
@@ -261,8 +261,8 @@ header .header__sides .header__left-side .header__logo .logo__title {
 }
 header .header__sides .header__left-side .header__socialmedia {
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 header .header__sides .header__left-side .header__socialmedia .icons {
   display: flex;
@@ -279,12 +279,12 @@ header .header__sides .header__left-side .header__socialmedia .icons {
 header .header__sides .header__right-side nav {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
 }
 header .header__sides .header__right-side nav .header__list ul {
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: center;
+  justify-content: flex-start;
 }
 header .header__sides .header__right-side nav .header__list ul li {
   margin-right: 20px;
@@ -332,7 +332,7 @@ header .header__sides .header__right-side nav .header__btn button {
 
 footer .footer__content .footer__info {
   display: flex;
-  align-items: normal;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 85px 0px 70px 0px;
   border-bottom: 1px solid #969AA0;
@@ -343,7 +343,7 @@ footer .footer__content .footer__info .info__data {
 footer .footer__content .footer__info .info__data .info__logo {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 footer .footer__content .footer__info .info__data .info__logo .logo__title a {
@@ -356,11 +356,11 @@ footer .footer__content .footer__info .info__data .info__logo .logo__title a {
 }
 footer .footer__content .footer__info .info__data .footer__socialmedia {
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: flex-start;
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 footer .footer__content .footer__info .info__data .footer__socialmedia .icons {
   display: flex;
@@ -386,7 +386,7 @@ footer .footer__content .footer__info .info__data .footer__socialmedia .icons {
 }
 footer .footer__content .footer__lists {
   display: flex;
-  align-items: normal;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
@@ -490,4 +490,211 @@ footer .footer__copyright p {
 }
 footer .footer__copyright p span {
   color: #FFFFFF;
+}
+
+.main__book-block {
+  background: #FFFFFF;
+  padding-top: 150px;
+}
+.main__book-block .book__content .book__desc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .main__book-block .book__content .book__desc {
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+}
+.main__book-block .book__content .book__desc .book__img {
+  width: 580px;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F8FC;
+}
+.main__book-block .book__content .book__desc .book__img img {
+  width: 70%;
+  height: 80%;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .main__book-block .book__content .book__desc .book__img {
+    max-width: 90%;
+    max-height: 400px;
+    margin: 0 auto 30px auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main__book-block .book__content .book__desc .book__img {
+    margin: 0 auto 30px auto;
+  }
+}
+.main__book-block .book__content .book__desc .book__data {
+  max-width: 640px;
+}
+.main__book-block .book__content .book__desc .book__data .book__title {
+  margin-bottom: 20px;
+}
+.main__book-block .book__content .book__desc .book__data .book__title h3 {
+  font-family: "Cardo", "serif";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #1B3764;
+}
+.main__book-block .book__content .book__desc .book__data .book__title p {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 170%;
+  color: #FFCA42;
+}
+.main__book-block .book__content .book__desc .book__data .book__title p span {
+  font-size: 20px;
+}
+.main__book-block .book__content .book__desc .book__data .book__info {
+  margin-bottom: 20px;
+}
+.main__book-block .book__content .book__desc .book__data .book__info p {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 180%;
+  color: #969AA0;
+  margin-bottom: 20px;
+}
+.main__book-block .book__content .book__desc .book__data .book__info .info__text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 500px;
+}
+.main__book-block .book__content .book__desc .book__data .book__info .info__text p:first-child {
+  margin-right: 40px;
+}
+.main__book-block .book__content .book__desc .book__data .book__btn {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 120px;
+}
+.main__book-block .book__content .book__desc .book__data .book__btn div {
+  width: 120px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFCA42;
+  margin-right: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #969AA0;
+}
+.main__book-block .book__content .book__desc .book__data .book__btn a {
+  width: 100%;
+}
+.main__book-block .book__content .book__desc .book__data .book__btn a button {
+  width: 220px;
+  height: 65px;
+  border: 1px solid #FFCA42;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 125%;
+  color: #1B3764;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: #FFCA42;
+  border: none;
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .main__book-block .book__content .book__text {
+    padding: 0px 15px;
+  }
+}
+.main__book-block .book__content .book__text .book__btns {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .main__book-block .book__content .book__text .book__btns {
+    flex-direction: column;
+  }
+}
+.main__book-block .book__content .book__text .book__btns button {
+  width: 220px;
+  height: 65px;
+  border: 1px solid #FFCA42;
+  font-family: "Cardo", serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 125%;
+  color: #1B3764;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: #FFCA42;
+  border: none;
+  background: #F5F8FC;
+  font-size: 18px;
+  width: 315px;
+}
+.main__book-block .book__content .book__text .book__btns button:first-child {
+  margin-right: 115px;
+  background: #1B3764;
+  color: #FFFFFF;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .main__book-block .book__content .book__text .book__btns button:first-child {
+    margin: 0px 0px 30px 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main__book-block .book__content .book__text .book__btns button:first-child {
+    margin-right: 50px;
+  }
+}
+@media (min-width: 320px) and (max-width: 425px) {
+  .main__book-block .book__content .book__text .book__btns button {
+    width: 100%;
+  }
+}
+.main__book-block .book__content .book__text .book__questions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 150px;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .main__book-block .book__content .book__text .book__questions {
+    flex-direction: column;
+  }
+}
+.main__book-block .book__content .book__text .book__questions .book__question {
+  max-width: 580px;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .main__book-block .book__content .book__text .book__questions .book__question {
+    margin-bottom: 30px;
+  }
+}
+.main__book-block .book__content .book__text .book__questions .book__question h3 {
+  font-family: "Cardo", "serif";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #1B3764;
+}
+.main__book-block .book__content .book__text .book__questions .book__question p {
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 180%;
+  color: #969AA0;
 }/*# sourceMappingURL=style.css.map */

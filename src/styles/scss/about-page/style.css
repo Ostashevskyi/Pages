@@ -244,12 +244,12 @@ header .header__sides {
 header .header__sides .header__left-side {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
 }
 header .header__sides .header__left-side .header__logo {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
 }
 header .header__sides .header__left-side .header__logo .logo__title {
   font-family: "Inter", sans-serif;
@@ -261,8 +261,8 @@ header .header__sides .header__left-side .header__logo .logo__title {
 }
 header .header__sides .header__left-side .header__socialmedia {
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 header .header__sides .header__left-side .header__socialmedia .icons {
   display: flex;
@@ -279,12 +279,12 @@ header .header__sides .header__left-side .header__socialmedia .icons {
 header .header__sides .header__right-side nav {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
 }
 header .header__sides .header__right-side nav .header__list ul {
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: center;
+  justify-content: flex-start;
 }
 header .header__sides .header__right-side nav .header__list ul li {
   margin-right: 20px;
@@ -332,7 +332,7 @@ header .header__sides .header__right-side nav .header__btn button {
 
 footer .footer__content .footer__info {
   display: flex;
-  align-items: normal;
+  align-items: flex-start;
   justify-content: space-between;
   padding: 85px 0px 70px 0px;
   border-bottom: 1px solid #969AA0;
@@ -343,7 +343,7 @@ footer .footer__content .footer__info .info__data {
 footer .footer__content .footer__info .info__data .info__logo {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
   margin-bottom: 25px;
 }
 footer .footer__content .footer__info .info__data .info__logo .logo__title a {
@@ -356,11 +356,11 @@ footer .footer__content .footer__info .info__data .info__logo .logo__title a {
 }
 footer .footer__content .footer__info .info__data .footer__socialmedia {
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: flex-start;
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 footer .footer__content .footer__info .info__data .footer__socialmedia .icons {
   display: flex;
@@ -386,7 +386,7 @@ footer .footer__content .footer__info .info__data .footer__socialmedia .icons {
 }
 footer .footer__content .footer__lists {
   display: flex;
-  align-items: normal;
+  align-items: flex-start;
   justify-content: space-between;
   width: 100%;
 }
@@ -496,7 +496,7 @@ footer .footer__copyright p span {
   background: #FFFFFF;
   display: flex;
   align-items: flex-end;
-  justify-content: normal;
+  justify-content: flex-start;
   flex-direction: column;
 }
 .main__about-block .about-author {
@@ -658,8 +658,8 @@ footer .footer__copyright p span {
 }
 .author-story .story {
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .author-story .story {
@@ -710,8 +710,8 @@ footer .footer__copyright p span {
 }
 .author-story .story .story__info .rewards .rewards__block {
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .author-story .story .story__info .rewards .rewards__block:nth-child(-n+2) .rewards__number::before {
   content: "";
@@ -833,7 +833,7 @@ footer .footer__copyright p span {
   margin: 0px 50px 50px 0px;
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .main__book_includes .book__includes_content .book_includes__books .book_includes__books_book {
@@ -941,8 +941,8 @@ footer .footer__copyright p span {
 .main__trusted_section {
   background: #fff;
   display: flex;
-  align-items: normal;
-  justify-content: normal;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 @media (min-width: 1024px) and (max-width: 1439px) {
   .main__trusted_section .trusted__content {
@@ -981,7 +981,7 @@ footer .footer__copyright p span {
 .main__trusted_section .trusted__companies .trusted__company_block {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
   flex-direction: column;
   text-align: center;
   max-width: 325px;
@@ -1073,7 +1073,7 @@ footer .footer__copyright p span {
 .main__free .main__free_content .main__free_block .block_info div {
   display: flex;
   align-items: center;
-  justify-content: normal;
+  justify-content: flex-start;
 }
 @media (max-width: 1023px) {
   .main__free .main__free_content .main__free_block .block_info div {
