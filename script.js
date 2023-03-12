@@ -3,5 +3,3 @@ function toogleBurger() {
         document.querySelector('.header__wrapper').classList.toggle('open');
     })
 }
-
-toogleBurger();
