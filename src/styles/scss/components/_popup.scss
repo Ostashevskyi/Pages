@@ -1,0 +1,133 @@
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+@use '../components/button';
+@use '../components/line';
+
+.main__popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include flex.flex(center, center);
+    overflow: hidden;
+    display: none;
+    &.open {
+        display: flex;
+    }
+    .popup__bg {
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        background: colors.$BLUE;
+        position: absolute;
+        opacity: 0.7;
+    }
+    .popup__content {
+        z-index: 999;
+        width: 800px;
+        height: 700px;
+        background: colors.$WHITE;
+        @media (min-width: 768px) and (max-width: 1024px) {
+            @include flex.flex;
+            width: 80%;
+            flex-direction: column;
+        }
+        .popup__title {
+            @include flex.flex($ai: center, $jc: space-around);
+            background: colors.$YELLOW;
+            height: 130px;
+            margin-bottom: 60px;
+            @media (min-width: 320px) and (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+                width: 100%;
+            }
+            h2 {
+                @include text.heading($color: colors.$BLUE, $fs: 50px, $lh: 120%);
+            }
+            button {
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 50px;
+                color: colors.$BLUE;
+            }
+        }
+        .popup__info {
+            @include flex.flex($jc: space-between);
+            padding: 0px 75px;
+            margin-bottom: 65px;
+            @media (min-width: 320px) and (max-width: 767px) {
+                flex-direction: column;
+                align-items: center;
+                padding: 0px 15px;
+
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+                width: 100%;
+                
+            }
+            .info__book {
+                @include flex.flex;
+                @media (min-width: 320px) and (max-width: 1024px) {
+                    margin-bottom: 20px;
+                }
+                img {
+                    width: 130px;
+                    height: 100%;
+                    margin-right: 35px;
+                }
+                div {
+                    h4 {
+                        @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 52px);
+                    }
+                    h5 {
+                        @include text.paragraph($color: colors.$GREY, $fs: 20px, $lh: 170%);
+                        margin-bottom: 40px;
+                    }
+                    a {
+                        @include text.paragraph($color: colors.$BLUE, $fs: 30px, $lh: 52px, $fw: 300);
+                    }
+                }
+            }
+            p {
+                padding: 18px 60px 18px 25px;
+                background: colors.$MEDIUM_GREY;
+                border: 1px solid colors.$GREY;
+                @include text.paragraph($color: colors.$GREY, $fs: 20px, $lh: 140%, $fw: 500);
+            }
+        }
+        .popup__price {
+            border-top: 1px solid colors.$GREY;
+            padding: 25px 75px 60px 75px;
+            @include flex.flex($ai: center, $jc: space-between);
+            @media (min-width: 320px) and (max-width: 767px) {
+                padding: 15px;
+            }
+            @media (min-width: 768px) and (max-width: 1024px) {
+                width: 100%;
+                padding: 15px 70px;
+            }
+            p {
+                &:first-child {
+                    @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 52px, $fw: 300);
+                }
+                @include text.paragraph($color: colors.$BLUE, $fs: 20px, $lh: 170%, $fw: 700);
+            }
+        }
+        .popup__btn {
+            @include flex.flex(center, center);
+            @media (min-width: 768px) and (max-width: 1024px) {
+                width: 100%;
+            }
+            button {
+                @include button.btn(primary);
+                width: 80%;
+            }
+        }
+    }
+}

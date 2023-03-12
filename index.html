@@ -11,7 +11,7 @@
 <body>
     <div class="wrapper">
         <header class="header__wrapper content">
-            <button class="header__burger-btn" onclick="toogleBurger()">
+            <button class="header__burger-btn">
                 <span></span><span></span><span></span>
             </button>
             <div class="header__sides">
@@ -56,7 +56,7 @@
                             </ul>
                         </div>
                         <div class="header__shopcart">
-                            <a href="#">
+                            <a href="#" class="open-popup">
                                 <img src="./src/images/icons/shop-cart.svg" alt="">
                             </a>
                         </div>
@@ -460,6 +460,35 @@
                                 <input type="submit" value="Subscribe" class="submit_input">
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__popup">
+                <div class="popup__bg"></div>
+                <div class="popup__content content">
+                    <div class="popup__title">
+                        <h2>Your Cart</h2>
+                        <button class="close-popup">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="popup__info">
+                        <div class="info__book">
+                            <img src="./src/images/the-dark-light.png" alt="the-dark-light">
+                            <div>
+                                <h4>The Dark Light</h4>
+                                <h5>$30.00 USD</h5>
+                                <a href="#">Remove</a>
+                            </div>
+                        </div>
+                        <p>1</p>
+                    </div>
+                    <div class="popup__price">
+                        <p>Sub-Total</p>
+                        <p>$ 60.00 USD</p>
+                    </div>
+                    <div class="popup__btn">
+                        <button class="close-popup">Continue to Checkout</button>
                     </div>
                 </div>
             </div>
