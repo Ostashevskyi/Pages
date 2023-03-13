@@ -1,0 +1,60 @@
+@use '../components/form';
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+@use '../components/button';
+@use '../components/line';
+@use '../utilities/center';
+
+
+.main__contact {
+    background: colors.$WHITE;
+    padding: 110px 0px;
+    .contact__content {
+        @include flex.flex($jc: space-between);
+        width: 100%;
+        @media (min-width: 320px) and (max-width: 1439px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact__info {
+            @media (min-width: 320px) and (max-width: 767px) {
+                padding: 0px 15px;
+            }
+            @media (min-width: 320px) and (max-width: 1439px) {
+                margin-bottom: 40px;
+            }
+            h2 {
+                @include text.heading($color: colors.$BLUE, $fs: 45px, $lh: 120%);
+                margin-bottom: 20px;
+            }
+            .line {
+                @include line.line;
+                margin-bottom: 25px;
+            }
+            p {
+                @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 180%);
+                margin-bottom: 40px;
+                max-width: 500px;
+            }
+            .contact__icons {
+                .contact__icon {
+                    @include flex.flex;
+                    .icon {
+                        min-width: 65px;
+                        min-height: 65px;
+                        background: colors.$BLUE;
+                        @include flex.flex(center, center);
+                        margin-right: 30px;
+                    }
+                }
+                .contact__text {
+                    h3 {
+                        @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 150%);
+                    }
+                }
+            }
+        }
+    }
+}
+
