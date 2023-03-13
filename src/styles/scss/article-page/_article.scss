@@ -1,0 +1,51 @@
+@use '../utilities/center';
+@use '../utilities/flex';
+@use '../utilities/colors';
+@use '../utilities/text';
+@use '../utilities/list';
+
+.main__article {
+    background: colors.$WHITE;
+    padding: 150px 0px;
+    .article__content {
+        @media (min-width: 320px) and (max-width: 1439px) {
+            padding: 0px 15px;
+        }
+        p {
+            @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 170%);
+            margin-bottom: 45px;
+        }
+        .article__img {
+            img {
+                width: 100%;
+                max-height: 700px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            h3 {
+                @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 52px);
+                margin-bottom: 25px;
+            }
+           
+        }
+        .article__list {
+            h2 {
+                @include text.heading($color: colors.$BLUE, $fs: 30px, $lh: 140%);
+            }
+            @include list.ul-list($color: colors.$BLUE, $spanColor: colors.$WHITE);
+            ul, ol {
+                margin-left: 20px;
+            }
+            ul {
+                margin-bottom: 45px;
+            }
+            @include list.ol-list; 
+        }
+        .quoteblock {
+            p {
+                color: colors.$WHITE;
+            }
+        }
+
+    }
+}

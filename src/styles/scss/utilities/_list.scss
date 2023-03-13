@@ -23,6 +23,7 @@
     ol {
         li {
             @include text.paragraph($lh: 155%, $color: colors.$BLUE);
+            list-style-type: decimal;
         }
     }
 }
