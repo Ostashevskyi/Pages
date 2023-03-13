@@ -1,0 +1,30 @@
+@use '../components/articles-card';
+@use '../utilities/center';
+@use '../utilities/flex';
+@use '../utilities/colors';
+
+.main__blog {
+    background: colors.$MEDIUM_GREY;
+    padding: 150px 0px 160px 0px;
+    .blog__content {
+        @include flex.flex(center, space-between);
+        flex-wrap: wrap;
+        width: 100%;
+        @media (min-width: 320px) and (max-width: 767px) {
+            flex-direction: column;
+        }
+        @media (min-width: 768px) and (max-width: 1439px) {
+            justify-content: space-around;
+        }
+        .articles__block {
+            margin-bottom: 35px;
+            @media (min-width: 768px) and (max-width: 1023px) {
+                max-width: 340px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
