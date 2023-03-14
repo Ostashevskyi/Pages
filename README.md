@@ -19,4 +19,6 @@ Project is created with:
 
 ## Setup
 You can download a zip of this project, or use `git clone https://github.com/Ostashevskyi/Pages.git`.
+This project used a SCSS, so you need to have a **Live Sass Compiler** extension in your VS Code, after installing at bottom right corner press "Watch Sass".
+
 
