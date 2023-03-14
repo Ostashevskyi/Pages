@@ -1,0 +1,41 @@
+@use '../utilities/main';
+@use '../utilities/text';
+@use '../utilities/colors';
+
+@use '../components/burger-menu';
+@use '../components/main-title';
+@use '../components/popup';
+@use '../components/button';
+
+@use '../header';
+@use '../footer';
+
+.main__404 {
+    background-image: url('../../../images/404bg.jpg');
+    background-repeat: no-repeat;
+    padding: 300px 0px;
+    text-align: center;
+    .content__404 {
+        max-width: 600px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding: 0px 15px;
+        }
+        img {
+            @media (min-width: 320px) and (max-width: 767px) {
+                width: 100%;
+            }
+            margin-bottom: 35px;
+        }
+        h3 {
+            @include text.heading($color: colors.$BLUE, $fs: 40px, $lh: 150%);
+            margin-bottom: 15px;
+        }
+        p {
+            @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 170%);
+            margin-bottom: 40px;
+        }
+        button {
+            @include button.btn(primary);
+        }
+    }
+}
