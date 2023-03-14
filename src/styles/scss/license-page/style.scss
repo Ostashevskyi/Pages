@@ -1,0 +1,46 @@
+@use '../utilities/main';
+@use '../utilities/text';
+@use '../utilities/colors';
+@use '../utilities/flex';
+
+@use '../components/burger-menu';
+@use '../components/main-title';
+@use '../components/popup';
+@use '../components/button';
+@use '../components/line';
+
+@use '../header';
+@use '../footer';
+
+.main__licenses {
+    background: colors.$WHITE;
+    padding: 130px 0px;
+    .licenses__content {
+        max-width: 800px;
+        @media (min-width: 320px) and (max-width: 1023px) {
+            padding: 0px 15px;
+        }
+        .licenses__photography {
+            margin-bottom: 75px;
+        }
+        .licenses__fonts {
+            div {
+                margin-bottom: 50px;
+            }
+        }
+        h2 {
+            @include text.heading($color: colors.$BLUE, $fs: 30px, $lh: 130%);
+        }
+        p {
+            @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 170%);
+            span {
+                color: colors.$BLUE;
+                font-weight: 600;
+            }
+        }
+        h3 {
+            @include text.heading($color: colors.$BLUE, $fs: 20px, $lh: 170%);
+
+        }
+    }
+}
