@@ -266,6 +266,7 @@ header .header__sides .header__right-side nav .header__list ul li {
 header .header__sides .header__right-side nav .header__shopcart {
   position: relative;
   margin-right: 30px;
+  cursor: pointer;
 }
 header .header__sides .header__right-side nav .header__shopcart::before {
   content: "01";
@@ -1436,7 +1437,7 @@ main .main__welcome_part .welcome_part__info .welcome__info_list ul li {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .articles__block .articles__block_img img {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .articles__block .articles__block_text {
@@ -1855,6 +1856,7 @@ footer .footer__copyright p span {
   outline: none;
   font-size: 50px;
   color: #1B3764;
+  cursor: pointer;
 }
 .main__popup .popup__content .popup__info {
   display: flex;

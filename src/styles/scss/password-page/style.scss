@@ -68,6 +68,7 @@
                     border: none;
                     outline: none;
                     color: colors.$GREY;
+                    cursor: text;
                     &::placeholder {
                         color: colors.$GREY;
                     }

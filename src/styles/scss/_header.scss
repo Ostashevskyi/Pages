@@ -73,6 +73,7 @@ header {
                 .header__shopcart {
                         position: relative;
                         margin-right: 30px;
+                        cursor: pointer;
                         &::before {
                             content: '01';
                             @include text.paragraph($fw: 900, $fs: 10px, $color: colors.$BLUE);

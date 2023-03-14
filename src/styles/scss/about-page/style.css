@@ -269,6 +269,7 @@ body {
   outline: none;
   font-size: 50px;
   color: #1B3764;
+  cursor: pointer;
 }
 .main__popup .popup__content .popup__info {
   display: flex;
@@ -494,6 +495,7 @@ header .header__sides .header__right-side nav .header__list ul li {
 header .header__sides .header__right-side nav .header__shopcart {
   position: relative;
   margin-right: 30px;
+  cursor: pointer;
 }
 header .header__sides .header__right-side nav .header__shopcart::before {
   content: "01";
