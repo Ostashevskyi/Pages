@@ -1,0 +1,44 @@
+@use '../utilities/main';
+@use '../utilities/text';
+@use '../utilities/colors';
+@use '../utilities/flex';
+
+@use '../components/burger-menu';
+@use '../components/main-title';
+@use '../components/popup';
+@use '../components/button';
+@use '../components/line';
+
+@use '../header';
+@use '../footer';
+
+.main__change-log {
+    background: colors.$WHITE;
+    padding: 200px 0px;
+    .change-log__content {
+        max-width: 600px;
+        margin: 0 auto;
+        background: colors.$ULTRA_LIGHT_GREY;
+        @include flex.flex(center, center);
+        flex-direction: column;
+        padding: 50px 0px;
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding: 50px 15px;
+            text-align: center;
+        }
+        .version {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: colors.$YELLOW;
+            @include flex.flex(center, center);
+            margin-bottom: 20px;
+            p {
+                @include text.heading($color: colors.$BLUE, $fs: 30px, $lh: 130%);
+            }
+        }
+        p {
+            @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 155%);
+        }
+    }
+}
