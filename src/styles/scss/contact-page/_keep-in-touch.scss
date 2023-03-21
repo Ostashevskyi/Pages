@@ -52,6 +52,11 @@
                     h3 {
                         @include text.heading($color: colors.$BLUE, $fs: 24px, $lh: 150%);
                     }
+                    p {
+                        a {
+                            @include text.paragraph($color: colors.$GREY, $fs: 19px, $lh: 180%);
+                        }
+                    }
                 }
             }
         }

@@ -714,7 +714,6 @@ footer .footer__copyright p span {
 }
 @media (max-width: 1439px) {
   .main__about-block .about-author {
-    min-width: 0px;
     max-width: 95%;
   }
 }

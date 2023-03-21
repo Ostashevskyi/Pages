@@ -704,7 +704,10 @@ footer .footer__copyright p span {
     margin-bottom: 50px;
   }
 }
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 1024px) and (max-width: 1289px) {
+  .articles__block {
+    margin-left: 10px;
+  }
   .articles__block:last-child {
     margin-top: 50px;
   }

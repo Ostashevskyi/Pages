@@ -10,7 +10,9 @@
     @media (max-width: 1023px) {
         margin-bottom: 50px;
     }
-    @media (min-width: 1024px) and (max-width: 1439px) {
+
+    @media (min-width: 1024px) and (max-width: 1289px) {
+        margin-left: 10px;
         &:last-child {
             margin-top: 50px;
         }
